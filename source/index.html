@@ -85,39 +85,31 @@
         </button>
         <div class="main-nav__wrapper"></div>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__current-item">
-              <a class="main-nav__item-link" href="#">
-                <p>
+            <li class="main-nav__item main-nav--current-item">
+              <a class="main-nav__item-link">
                   Главная
-                </p>
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="#">
-                <p>
                   Фото и видео
-                </p>
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="#">
-                <p>
                   Форма отзыва
-                </p>
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">
-                <p>
+              <a class="main-nav__item-link" href="https://htmlacademy.ru">
                   HTML ACADEMY
-                </p>
               </a>
             </li>
           </ul>
       </nav>
     </header>
     <main class="main">
-      <section class="main__introduce-section">
+      <section class="main__introduce-section introduce-section">
         <h1 class="visually-hidden">
           sedona
         </h1>
@@ -125,7 +117,7 @@
           <img src="../img/mobile/introduce-section/introduce.svg" alt="Приветствуем в Седоне" width="282" height="214">
         </div>
       </section>
-      <section class="main__advantages">
+      <section class="main__advantages advantages">
         <h2 class="advantages__title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
@@ -147,33 +139,35 @@
               <div class="advantages__item-image">
                 <img src="../img/mobile/advantages-section/advantages-1.jpg" alt="Здания Седоны с флагами на стенах">
               </div>
-              <div class="reasons__wrapper">
-                <ul class="reasons__list">
-                  <li class="reason-item">
-                    <h3 class="reason-item__title">
-                      Жильё
-                    </h3>
-                    <p class="reason-item__description">
-                      Рекомендуем пожить в настоящем мотеле, все как в кино!
-                    </p>
-                  </li>
-                  <li class="reason-item">
-                    <h3 class="reason-item__title">
-                      Сувениры
-                    </h3>
-                    <p class="reason-item__description">
-                      Не только китайского, но и местного производства!
-                    </p>
-                  </li>
-                  <li class="reason-item">
-                    <h3 class="reason-item__title">
-                      Еда
-                    </h3>
-                    <p class="reason-item__description">
-                      Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                    </p>
-                  </li>
-                </ul>
+              <div class="reasons">
+                <div class="reasons__wrapper">
+                  <ul class="reasons__list">
+                    <li class="reason-item">
+                      <h3 class="reason-item__title">
+                        Жильё
+                      </h3>
+                      <p class="reason-item__description">
+                        Рекомендуем пожить в настоящем мотеле, все как в кино!
+                      </p>
+                    </li>
+                    <li class="reason-item">
+                      <h3 class="reason-item__title">
+                        Сувениры
+                      </h3>
+                      <p class="reason-item__description">
+                        Не только китайского, но и местного производства!
+                      </p>
+                    </li>
+                    <li class="reason-item">
+                      <h3 class="reason-item__title">
+                        Еда
+                      </h3>
+                      <p class="reason-item__description">
+                        Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="advantages__item">
@@ -223,17 +217,17 @@
           </ol>
         </div>
       </section>
-      <section class="main__hotels-search-section">
-        <h1 class="hotels-search-section__title">
+      <section class="main__hotels-search-section hotels-search">
+        <h2 class="hotels-search__title">
           Заинтересовались?
-        </h1>
-        <p class="hotels-search-section__description">
+        </h2>
+        <p class="hotels-search__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button class="hotels-search-section__button" type="button">
+        <button class="hotels-search__button" type="button">
           Найти гостиницу
         </button>
-        <div class="hotels-search-section__map" id="map">
+        <div class="hotels-search__map" id="map">
           <!-- Временное промо -->
           <img src="../img/mobile/hotels-search/" alt="Место на карте распоолоено в штате Аризона около Флагстафф">
         </div>
@@ -241,27 +235,35 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__"></div>
+        <div class="page-footer__hashtag">#visitsedona</div>
         <div class="page-footer__social">
-          <a href="https://twitter.com/htmlacademy_ru" class="page-footer__social-twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" >
-              <path d="M11.3.2c1.7-.5 3.1.2 3.7 1l2.1-.6c0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5a3 3 0
-              0 1-1.6 2c-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-3
-              .4.2.6.3 1.3.2C1.8 8 .4 7.4.5 5.2c.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7C8.5
-              2.3 9.5.8 11.3.2Z" fill="#000"/>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" >
-              <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z" fill="#000"/>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="page-footer__social-youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" >
-              <path d="M17.1 0H2.8A2.9 2.9 0 0 0 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6
-              0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" fill="#000"/>
-            </svg>
-          </a>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="https://twitter.com/htmlacademy_ru" class="page-footer__social-twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" >
+                  <path d="M11.3.2c1.7-.5 3.1.2 3.7 1l2.1-.6c0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5a3 3 0
+                  0 1-1.6 2c-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-3
+                  .4.2.6.3 1.3.2C1.8 8 .4 7.4.5 5.2c.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7C8.5
+                  2.3 9.5.8 11.3.2Z" fill="#000"/>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" >
+                  <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z" fill="#000"/>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="page-footer__social-youtube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" >
+                  <path d="M17.1 0H2.8A2.9 2.9 0 0 0 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6
+                  0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" fill="#000"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">
