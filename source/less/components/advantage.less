@@ -1,46 +1,64 @@
-.advantage {
-  &__wrapper {
-    color: #ffffff;
-    background-color: #81b3d2;
-  }
+.advantage__wrapper {
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin-bottom: 26px;
+}
 
-  &__wrapper--png {
-    background-image: url("../../img/mobile/index/advantages-section/first-block.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+.advantage__background-svg {
+  background-image: url("../../img/mobile/index/advantages-section/first-advantage-background.svg");
+  background-repeat: no-repeat;
+}
 
+.advantage__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 11px;
+}
 
-  &__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 55px auto 15px;
-  }
+.advantage__title--first-child-indent {
+  padding-top: 71px;
+}
 
-  &__number {
-    position: relative;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto 15px;
-  }
+.advantage__title--second-child-indent {
+  padding-top: 39px;
+}
 
-  &__description {
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto 39px;
-    width: 282px;
-  }
+.advantage__number {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 15px;
+}
 
-  &__image {
-    object-fit: contain;
-    object-position: left;
-    width: 320px;
-  }
+.advantage__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 282px;
+}
+
+.advantage__description--first-child-indent {
+  margin-bottom: 39px;
+}
+
+.advantage__description--second-child-indent {
+  margin-bottom: 35px;
+}
+
+.advantage__description:last-child {
+  margin: 0 auto 57px;
+}
+
+.advantage__image {
+  display: block;
+  margin-top: auto;
+  object-fit: contain;
+  object-position: left;
 }
