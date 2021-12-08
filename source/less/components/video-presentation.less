@@ -4,7 +4,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin: 33px 20px 33px;
+  margin: 33px auto 33px;
 }
 
 .video-presentation__subtitle {
@@ -12,13 +12,22 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 20px 33px;
+  margin: 0 auto 33px;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+  }
 }
 
 .video-presentation__video {
   position: relative;
-}
+  margin-bottom: 115px;
 
-.video-presentation__promo-video {
-  position: absolute;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
 }

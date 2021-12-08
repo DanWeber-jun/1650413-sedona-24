@@ -1,8 +1,32 @@
 .post {
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    .post__img-wrapper {
+      width: 324px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .post__img-wrapper {
+      width: 400px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: @tablet-width) {
+      .post__img-wrapper {
+        width: 648px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .post__img-wrapper {
+        width: 1200px;
+      }
+    }
+  }
 }
 
 .post:last-child {
@@ -24,9 +48,12 @@
 }
 
 .post__img-wrapper {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   margin: 0;
   margin-bottom: 10px;
+  width: 280px;
+  height: 280px;
 }
 
 .post__title {
