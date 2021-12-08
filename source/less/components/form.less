@@ -22,7 +22,7 @@
 
 .form__item {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 52px;
 }
 
 .form__nomination-wrapper {
@@ -54,6 +54,10 @@
   box-sizing: border-box;
   border: none;
   padding: 18px 80px 14px 22px;
+  min-height: 58px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .form__input::placeholder {
@@ -63,16 +67,76 @@
   line-height: 26px;
 }
 
-.form__radio-name {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+.form__input--spin::-webkit-outer-spin-button,
+.form__input--spin::-webkit-inner-spin-button {
+  appearance: none;
 }
 
-.form__checkbox-name {
+.form__icon-wrapper {
+  position: absolute;
+  background-color: #e6e6e6;
+  top: 0;
+  right: 0;
+  height: 58px;
+  width: 58px;
+}
+
+.form__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+}
+
+.form__mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background-color: #f2f2f2;
+}
+
+input[type="radio"] + .form__mark {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .form__mark {
+  &::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+  }
+}
+
+input[type="checkbox"] + .form__mark {
+  border-radius: 10%;
+}
+
+
+input[type="checkbox"]:checked + .form__mark {
+  &::after {
+    content: "";
+    width: 23px;
+    height: 16px;
+    background-image: url("../../img/mobile/form/tick-checkbox.svg");
+  }
+}
+
+.form__name {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin-left: 73px;
 }
 
 .form__textarea {
@@ -86,23 +150,18 @@
   padding: 13px 22px;
   max-width: 280px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 960px;
+  }
 }
 
 .form__textarea::placeholder {
   color: #000000;
   font-size: 18px;
   line-height: 26px;
-}
-
-.form__contact-input-wrapper {
-  position: relative;
-}
-
-.form__icon-wrapper {
-  position: absolute;
-  background-color: #e6e6e6;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 20%;
 }
