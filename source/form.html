@@ -20,7 +20,7 @@
           <div class="main-nav__wrapper main-nav__wrapper--mobile">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--current-item">
-                <a class="main-nav__item-link">
+                <a class="main-nav__item-link" href="inde.html">
                     Главная
                 </a>
               </li>
@@ -57,7 +57,7 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
           <form class="comment-form__form form" action="https://echo.htmlacademy.ru/" method="POST">
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--name">
               <legend class="form__title">
                 Представьтесь:
               </legend>
@@ -75,7 +75,7 @@
                     <label class="form__input-nomination-name" for="last-name">
                       Фамилия*:
                     </label>
-                    <input class="form__input"  id="last-name" type="text" placeholder="Петр" required>
+                    <input class="form__input"  id="last-name" type="text" placeholder="Иванов" required>
                   </div>
                 </li>
                 <li class="form__item">
@@ -83,12 +83,12 @@
                     <label class="form__input-nomination-name" for="patronymic">
                       Отчество:
                     </label>
-                    <input class="form__input"  id="patronymic" type="text" placeholder="Петр" required>
+                    <input class="form__input"  id="patronymic" type="text" placeholder="Александрович" required>
                   </div>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--contact">
               <legend class="form__title">
                 Контактная информация:
               </legend>
@@ -98,9 +98,11 @@
                     Контактный телефон*:
                   </label>
                   <div class="form__contact-input-wrapper">
-                    <input class="form__input" id="phone-number" type="number" placeholder="Введите телефон">
+                    <input class="form__input form__input--spin" id="phone-number" type="number" placeholder="Введите телефон">
                     <div class="form__icon-wrapper">
-                      <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg>
+                      <div class="form__icon">
+                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -111,13 +113,15 @@
                   <div class="form__contact-input-wrapper">
                     <input class="form__input" id="e-mail" type="email" placeholder="Введите e-mail" required>
                     <div class="form__icon-wrapper">
-                      <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none"><path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg>
+                      <div class="form__icon">
+                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none"><path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg>
+                      </div>
                     </div>
                   </div>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--impression">
               <legend class="form__title">
                 Ваше общее впечатление:
               </legend>
@@ -126,7 +130,7 @@
                   <label class="form__label" for="radio-positiv">
                     <input class="form__radio visually-hidden" id="radio-positiv" name="form__radio" type="radio" checked>
                     <span class="form__mark"></span>
-                    <span class="form__radio-name">
+                    <span class="form__name">
                       Скорее положительное
                     </span>
                   </label>
@@ -135,7 +139,7 @@
                   <label class="form__label" for="radio-negativ">
                     <input class="form__radio visually-hidden" id="radio-negativ" name="form__radio" type="radio">
                     <span class="form__mark"></span>
-                    <span class="form__radio-name">
+                    <span class="form__name">
                       Скорее отрицательное
                     </span>
                   </label>
@@ -144,14 +148,14 @@
                   <label class="form__label" for="neutral">
                     <input class="form__radio visually-hidden" id="neutral" name="form__radio" type="radio">
                     <span class="form__mark"></span>
-                    <span class="form__radio-name">
+                    <span class="form__name">
                       Затрудняюсь ответить
                     </span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--attraction">
               <legend class="form__title">
                 Посещенные достопримечательности:
               </legend>
@@ -160,7 +164,7 @@
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
                     <span class="form__mark"></span>
-                    <span class="form__checkbox-name">
+                    <span class="form__name">
                       Мост Дьявола
                     </span>
                   </label>
@@ -169,7 +173,7 @@
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
                     <span class="form__mark"></span>
-                    <span class="form__checkbox-name">
+                    <span class="form__name">
                       Гора-Колокол
                     </span>
                   </label>
@@ -178,23 +182,23 @@
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
                     <span class="form__mark"></span>
-                    <span class="form__checkbox-name">
+                    <span class="form__name">
                       Слайд-парк
                     </span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__checkbox visually-hidden" type="checkbox" checked>
+                    <input class="form__checkbox visually-hidden" type="checkbox">
                     <span class="form__mark"></span>
-                    <span class="form__checkbox-name">
+                    <span class="form__name">
                       Красные скалы
                     </span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--emotions">
               <legend class="form__title">
                 Опишите свои эмоции:
               </legend>
@@ -205,7 +209,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer container">
         <div class="page-footer__wrapper">
           <div class="page-footer__hashtag">#visitsedona</div>
           <div class="page-footer__social">
