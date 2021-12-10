@@ -3,9 +3,12 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  width: 270px;
   margin: 0 auto 28px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+  }
 }
 
 .advantages__subtitle {
@@ -15,6 +18,11 @@
   margin: 0 auto;
   width: 290px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin-bottom: 52px;
+  }
 }
 
 .advantages__list {
