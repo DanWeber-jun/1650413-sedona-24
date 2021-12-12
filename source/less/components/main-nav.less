@@ -9,6 +9,8 @@
 }
 
 .main-nav__header-logo {
+  position: relative;
+  z-index: 3;
   display: grid;
   grid-column: ~"2 / 4";
   margin: 0 auto;
@@ -156,8 +158,8 @@
 
 .main-nav__item {
   @media (max-width: @mobile-width-only) {
-    border-top: 1vh solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1vh solid rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
     &:first-child {
       border-top: none;

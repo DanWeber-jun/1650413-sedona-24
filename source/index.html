@@ -16,30 +16,28 @@
           <button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню">
             <span class="main-nav__toggle"></span>
           </button>
-          <!-- <div class="main-nav__wrapper"> -->
-            <ul class="main-nav__list main-nav__list--opened container">
-              <li class="main-nav__item main-nav__item--current-item">
-                <a class="main-nav__item-link">
-                    Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="catalog.html">
-                    Фото и видео
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="form.html">
-                    Форма отзыва
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="https://htmlacademy.ru">
-                    HTML ACADEMY
-                </a>
-              </li>
-            </ul>
-          <!-- </div> -->
+          <ul class="main-nav__list main-nav__list--opened container">
+            <li class="main-nav__item main-nav__item--current-item">
+              <a class="main-nav__item-link">
+                  Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">
+                  Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="form.html">
+                  Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="https://htmlacademy.ru">
+                  HTML ACADEMY
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main class="main">
@@ -59,10 +57,10 @@
             <ol class="advantages__list">
               <li class="advantages__item  advantage">
                 <div class="advantage__reason advantage__reason--reason-accent">
-                  <div class="advantage__wrapper">
-                    <div class="advantage__background-svg container">
+                  <div class="advantage__wrapper advantage__wrapper--background-svg">
+                    <div class="advantage__text">
                       <h3 class="advantage__title advantage__title--first-child-indent">
-                        Настоящий городок
+                        Настоящий <br> городок
                       </h3>
                       <p class="advantage__number">
                         №1
@@ -71,12 +69,14 @@
                         Седона не аттракцион для туристов, там течет своя жизнь
                       </p>
                     </div>
-                    <img class="advantage__image" src="img/mobile/index/advantages-section/advantages-1.jpg" alt="Здания Седоны с флагами на стенах" width="800" height="256">
+                    <div class="advantage__image--wrapper">
+                      <img class="advantage__image" src="img/mobile/index/advantages-section/advantages-1.jpg" alt="Здания Седоны с флагами на стенах" width="800" height="256">
+                    </div>
                   </div>
-                  <div class="advantage__reasons reasons container">
+                  <div class="advantage__reasons reasons">
                     <ul class="reasons__list">
                       <li class="reasons__item reason">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="39" height="37" viewBox="0 0 39 37" fill="none">
+                        <svg class="reason__image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="39" height="37" viewBox="0 0 39 37" fill="none">
                           <path d="M15.4015 33.2194H23.7549V21.0613H15.4015V33.2194ZM22.2408 31.7441H16.9155V22.5365H22.1886V31.7441H22.2408Z" fill="#81B3D2"/>
                           <path d="M37.9036 20.0431L39 18.9748L33.8313 13.9386V0.203483H26.6265V6.91843L19.4739 0L0 19.0257L1.09639 20.094L5.16867 16.126V35.3552H3.13253V36.8305H36.494V35.3552H33.8313V16.0752L37.9036 20.0431ZM28.1406 1.72961H32.2651V12.4633L28.1406 8.44455V1.72961ZM32.3173 35.3043H6.73494V14.5999L19.4739 2.13657L32.2651 14.5999V35.3043H32.3173Z" fill="#81B3D2"/>
                           <path d="M15.5582 13.8369C15.5582 16.0243 17.3855 17.8048 19.5783 17.8048C21.8233 17.8048 23.6506 16.0243 23.6506 13.8369C23.6506 11.6494 21.8233 9.9198 19.5783 9.9198C17.3333 9.9198 15.5582 11.6494 15.5582 13.8369ZM19.5783 11.2933C20.9879 11.2933 22.1888 12.4125 22.1888 13.8369C22.1888 15.2104 21.0402 16.3804 19.5783 16.3804C18.1687 16.3804 16.9679 15.2612 16.9679 13.8369C16.9679 12.4633 18.1687 11.2933 19.5783 11.2933Z" fill="#81B3D2"/>
@@ -108,7 +108,7 @@
                         </p>
                       </li>
                       <li class="reasons__item reason">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35" fill="none">
+                        <svg class="reason__image" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35" fill="none">
                           <path d="M37.7428 23.3004H2.25722C0.997375 23.3004 0 24.3135 0 25.4785V27.2514C0 28.4164 0.997375 29.3788 2.25722 29.3788H2.78215V29.8853C2.78215 32.6712 5.14436 34.9 7.979 34.9H32.021C34.9081 34.9 37.2178 32.6206 37.2178 29.8853V29.3788H37.7428C38.9501 29.3788 40 28.4164 40 27.2007V25.4278C40 24.3135 39.0026 23.3004 37.7428 23.3004ZM35.6955 29.8853C35.6955 31.8101 34.0682 33.3804 32.0735 33.3804H7.92651C5.93176 33.3804 4.30446 31.8101 4.30446 29.8853V29.3788H35.6955V29.8853ZM38.4252 27.2007C38.4252 27.5553 38.1102 27.8592 37.7428 27.8592H2.25722C1.88976 27.8592 1.5748 27.5553 1.5748 27.2007V25.4278C1.5748 25.1239 1.88976 24.82 2.25722 24.82H37.7953C38.1627 24.82 38.4777 25.1239 38.4777 25.4785V27.2007H38.4252Z" fill="#81B3D2"/>
                           <path d="M8.50395 19.1973L11.3386 21.2234L14.2257 19.1973L17.1129 21.2234L20 19.1973L22.8347 21.2234L25.7218 19.1973L28.6089 21.2234L31.4961 19.1973L34.3832 21.2234L37.6903 18.8427L36.7979 17.627L34.3832 19.2986L31.4961 17.2725L28.6089 19.2986L25.7218 17.2725L22.8347 19.2986L20 17.2725L17.1129 19.2986L14.2257 17.2725L11.3386 19.2986L8.50395 17.2725L5.61682 19.2986L3.20212 17.627L2.25723 18.8427L5.61682 21.2234L8.50395 19.1973Z" fill="#81B3D2"/>
                           <path d="M37.2179 15.7531C37.2179 15.4492 37.2704 14.4361 37.2179 14.2335C36.8504 6.33164 29.2913 0 20 0C10.7087 0 3.09712 6.33164 2.72967 14.2335C2.72967 14.4361 2.72967 15.4492 2.72967 15.7531H37.2179ZM20 1.51959C28.399 1.51959 35.3281 7.19274 35.6431 14.2335H4.30447C4.67193 7.19274 11.6011 1.51959 20 1.51959Z" fill="#81B3D2"/>
@@ -130,7 +130,7 @@
               <li class="advantages__item advantage">
                 <div class="advantage__reason advantage__reason--reason-accent">
                   <div class="advantage__wrapper">
-                    <div class="container">
+                    <div class="advantage__text">
                       <h3 class="advantage__title advantage__title--second-child-indent">
                         Там есть мост дьявола
                       </h3>
@@ -141,42 +141,50 @@
                         Да, по нему можно пройти! Если вы осмелитесь, конечно
                       </p>
                     </div>
-                    <img class="advantage__image" src="img/mobile/index/advantages-section/advantages-2.jpg" alt="Здания Седоны с флагами на стенах" width="800" height="256">
+                    <div class="advantage__image--wrapper">
+                      <img class="advantage__image" src="img/mobile/index/advantages-section/advantages-2.jpg" alt="Здания Седоны с флагами на стенах" width="800" height="256">
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="advantages__item advantage container">
-                <h3 class="advantage__title">
-                  Небольшая площадь
-                </h3>
-                <p class="advantage__number">
-                  №3
-                </p>
-                <p class="advantage__description">
-                  Все достопримечательности находятся очень близко
-                </p>
+              <li class="advantages__item advantage">
+
+                  <h3 class="advantage__title">
+                    Небольшая площадь
+                  </h3>
+                  <p class="advantage__number">
+                    №3
+                  </p>
+                  <p class="advantage__description">
+                    ВСЕ интересные места находятся очень близко
+                  </p>
+
               </li>
-              <li class="advantages__item advantage container">
-                <h3 class="advantage__title">
-                  Красивая дорога
-                </h3>
-                <p class="advantage__number">
-                  №4
-                </p>
-                <p class="advantage__description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
+              <li class="advantages__item advantage">
+
+                  <h3 class="advantage__title">
+                    Красивая дорога
+                  </h3>
+                  <p class="advantage__number">
+                    №4
+                  </p>
+                  <p class="advantage__description">
+                    Ехать в Седону из Лас-Вегаса совсем не скучно!
+                  </p>
+
               </li>
-              <li class="advantages__item advantage container">
-                <h3 class="advantage__title">
-                  Мало туристов
-                </h3>
-                <p class="advantage__number">
-                  №5
-                </p>
-                <p class="advantage__description">
-                  Большинство едет в Гранд Каньон и толпится там
-                </p>
+              <li class="advantages__item advantage">
+
+                  <h3 class="advantage__title">
+                    Мало туристов
+                  </h3>
+                  <p class="advantage__number">
+                    №5
+                  </p>
+                  <p class="advantage__description">
+                    Большинство едет в Гранд Каньон и толпится там
+                  </p>
+
               </li>
             </ol>
           </div>
@@ -187,7 +195,7 @@
               Заинтересовались?
             </h2>
             <p class="hotels-search__description">
-              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+              Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
           </div>
           <button class="hotels-search__button" type="button">
@@ -232,27 +240,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      let navMain = document.querySelector('.main-nav')
-      let navToggle = document.querySelector('.main-nav__button');
-      let navList = document.querySelector('.main-nav__list')
-
-      navMain.classList.remove('main-nav--nojs')
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          navList.classList.remove('main-nav__list--closed');
-          navList.classList.add('main-nav__list--opened');
-        }
-        else {
-          navMain.classList.remove('main-nav--opened');
-          navMain.classList.add('main-nav--closed');
-          navList.classList.remove('main-nav__list--opened');
-          navList.classList.add('main-nav__list--closed');
-        }
-      });
-    </script>
+  <script src="../source/js/main.js"></script>
   </body>
 </html>
