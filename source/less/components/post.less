@@ -1,6 +1,5 @@
 .post {
   position: relative;
-  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     .post__img-wrapper {
@@ -29,31 +28,75 @@
   }
 }
 
-.post:last-child {
-  margin-bottom: 54px;
+@media (max-width: @mobile-width-only) {
+  .post {
+    margin-bottom: 44px;
+  }
+
+  .post::after {
+    content: "";
+    position: absolute;
+    background-color: #d6d6d6;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    bottom: -21px;
+  }
+
+  .post:last-child {
+    margin-bottom: 54px;
+  }
 }
 
-.post::after {
-  content: "";
-  position: absolute;
-  background-color: #d6d6d6;
-  width: 100%;
-  left: 0;
-  height: 1px;
-  bottom: -21px;
-}
 
 .post__figure {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+  }
 }
 
 .post__img-wrapper {
   object-fit: cover;
   object-position: center;
   margin: 0;
-  margin-bottom: 10px;
   width: 280px;
-  height: 280px;
+  height: 100%;
+}
+
+.post__adjacent {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(1, 1, 1, 0.2);
+  }
+}
+
+.post__description {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 22px 0 15px 20px;
+  }
 }
 
 .post__title {
@@ -61,20 +104,42 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .post__photo-author {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 13px;
 }
 
-.post__like-icon {
-  background-color: transparent;
+.post__likes {
+  flex-direction: row;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 21px;
+  }
+}
+
+.post__like-button {
   padding: 0;
   margin-right: 14px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.post__like-icon {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
 }
 
 .post__like-quantity {
@@ -82,8 +147,4 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-}
-
-.post__likes {
-  display: flex;
 }

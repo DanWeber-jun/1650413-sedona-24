@@ -40,7 +40,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main">
+      <main class="main main__inner main__inner--form">
         <div class="main__introduce introduce introduce--inner">
           <div class="introduce__img-wrapper">
             <svg class="introduce__img introduce__img--inner" xmlns="http://www.w3.org/2000/svg" width="229" height="39" fill="none"><path d="M27.3 26.6v.7c-.3 2-1 4-2 5.8-1 1.8-2.5 3.2-4.2 4.2L19 38l-2.1.5-1.8.3-1.7.1h-.6A19.7 19.7 0 0 1 0 33.6L4.7 26l.2.2c1 1.1 2.2 2.2 3.5 3.2 1.3 1 2.9 1.5 4.6 1.6h.1l.2.1h.1l.2.1h.5l.5-.1a4.8 4.8 0 0 0 3-2l.1-.3.1-.3.2-.7v-.7c0-1-.4-2-1.3-2.6-1-.7-2-1.3-3-1.7l-1.2-.4-1-.2h-.2v-.1c-2-.5-3.8-1.2-5.4-2.3A8.2 8.2 0 0 1 2 14.2 11 11 0 0 1 2 13V11c0-.3 0-.6.2-1 0-.7.3-1.5.6-2.3.2-.7.6-1.4 1-2a11 11 0 0 1 4.8-4.5 16 16 0 0 1 6-1.2l1.6.1 1.6.2a20.5 20.5 0 0 1 8 3l-3.2 7.3A28 28 0 0 0 19 8.5a8 8 0 0 0-3.7-.9h-.5c-1 .1-1.7.5-2.5 1.2s-1.2 1.5-1.2 2.3v.3l.2.4.4.7.7.7 1.8 1 2.6.8 2.1.5 1.8.5a9 9 0 0 1 5 3.9c1 1.8 1.6 3.7 1.6 5.7v1Zm30 3.2V38H34.7V.9h22.8V9H44.6v6.5h12v8h-12v6.3h12.8Zm38.5-1.5a15.8 15.8 0 0 1-11.1 8.8c-2.2.5-4.3.8-6.5.9H64.5V1h14.3c2 .1 4.1.4 6.2.9a15.3 15.3 0 0 1 10.7 8.6c1.2 2.5 1.9 5 2 7.6v2.3c0 2.8-.7 5.4-2 8Zm-8.2-9.2v-.5c-.2-1.4-.5-2.9-1.1-4.2a8.4 8.4 0 0 0-2.6-3.3 6.9 6.9 0 0 0-2.7-1.4c-1-.3-2-.4-3-.4h-3.8v20.5h.4l.4.1h.4l.3.1h1.2l1.2-.1 3-.5c1-.3 1.8-.8 2.6-1.3a7.9 7.9 0 0 0 2.8-3.6c.6-1.6.9-3.2.9-4.8V19Zm54.9 2c0 .4 0 .8-.2 1.2a18.7 18.7 0 0 1-8.9 13.6 21 21 0 0 1-10.8 3H121a21.3 21.3 0 0 1-7.7-2.2 19 19 0 0 1-7.6-7.3 19.4 19.4 0 0 1-2.9-10l.1-1.5.2-1.5a25.1 25.1 0 0 1 2.2-6c1.8-3.4 4.2-5.9 7.4-7.6A20.3 20.3 0 0 1 124.1.2l1.4.1a21.1 21.1 0 0 1 8.3 3c2.8 1.8 5 4.2 6.4 7.2 1.5 3 2.3 6 2.3 9.3V21Zm-10.1-2.2v-.7c-.3-1.6-.8-3.2-1.6-4.8a9 9 0 0 0-3.3-3.6l-1.2-.5-1.1-.4-1.2-.2-1.2-.1c-2 0-3.8.6-5.4 1.9a9.9 9.9 0 0 0-3.5 5l-.1.2v.2l-.4 1-.2 1.2-.1.8v1.8c0 2 .7 4 1.9 5.8a8 8 0 0 0 5.4 4h.8l.7.2h.7a9.9 9.9 0 0 0 9.6-9.3l.1-.8V19Zm43.8 19.2-14-19.2c-.5-.5-.8-1-1.2-1.7a25 25 0 0 1-1.6-3.5l-.6-1.3a42.8 42.8 0 0 1 .6 7.4V38h-9.8V.9h9.8l14 19.1 1 1.7 1 1.9.6 1.5.7 1.4-.1-1.2-.2-1.2-.1-2.4V1h9.6V38h-9.7Zm42.7 0-1.9-6.7h-14.3l-2 6.7h-10L203.6 1H216L229 38h-10.1ZM211 11.9l-.5-1.8-.5-2-.1-.6-.1-.6-.2.6-.1.6-.1.2v.2l-.4 1.8-.5 1.6-3.8 12.3H215L211.1 12Z" fill="#fff"/></svg>
@@ -55,9 +55,11 @@
           </p>
           <form class="comment-form__form form" action="https://echo.htmlacademy.ru/" method="POST">
             <fieldset class="form__group form__group--name">
-              <legend class="form__title">
-                Представьтесь:
-              </legend>
+              <div class="form__title--name-elements">
+                <legend class="form__title form__title--name">
+                  Представьтесь:
+                </legend>
+              </div>
               <ul class="form__list">
                 <li class="form__item">
                   <div class="form__nomination-wrapper">
@@ -86,15 +88,17 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--contact">
-              <legend class="form__title">
-                Контактная информация:
-              </legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <div class="form__title--contact-elements">
+                <legend class="form__title form__title--contact-indent ">
+                  Контактная информация:
+                </legend>
+              </div>
+              <ul class="form__list form__list--contact-input-direction">
+                <li class="form__item form__item--contact-input-direction">
                   <label class="form__input-nomination-contact" for="phone-number">
                     Контактный телефон*:
                   </label>
-                  <div class="form__contact-input-wrapper">
+                  <div class="form__contact-input--wrapper">
                     <input class="form__input form__input--spin" id="phone-number" type="number" placeholder="Введите телефон">
                     <div class="form__icon-wrapper">
                       <div class="form__icon">
@@ -103,11 +107,11 @@
                     </div>
                   </div>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--contact-input-direction">
                   <label class="form__input-nomination-contact" for="e-mail">
                     Электронная почта*:
                   </label>
-                  <div class="form__contact-input-wrapper">
+                  <div class="form__contact-input--wrapper">
                     <input class="form__input" id="e-mail" type="email" placeholder="Введите e-mail" required>
                     <div class="form__icon-wrapper">
                       <div class="form__icon">
@@ -119,11 +123,11 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--impression">
-              <legend class="form__title">
+              <legend class="form__title form__title--impression-indent">
                 Ваше общее впечатление:
               </legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--impression-indent">
+                <li class="form__item form__item--impression-indent">
                   <label class="form__label" for="radio-positiv">
                     <input class="form__radio visually-hidden" id="radio-positiv" name="form__radio" type="radio" checked>
                     <span class="form__mark"></span>
@@ -132,7 +136,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--impression-indent">
                   <label class="form__label" for="radio-negativ">
                     <input class="form__radio visually-hidden" id="radio-negativ" name="form__radio" type="radio">
                     <span class="form__mark"></span>
@@ -141,7 +145,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--impression-indent">
                   <label class="form__label" for="neutral">
                     <input class="form__radio visually-hidden" id="neutral" name="form__radio" type="radio">
                     <span class="form__mark"></span>
@@ -153,10 +157,12 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--attraction">
-              <legend class="form__title">
-                Посещенные достопримечательности:
-              </legend>
-              <ul class="form__list">
+              <div class="form__title--attraction-elements">
+                <legend class="form__title form__title--attraction-indent">
+                  Посещенные достопримечательности:
+                </legend>
+              </div>
+              <ul class="form__list form__list--attraction-indent">
                 <li class="form__item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
@@ -200,8 +206,14 @@
                 Опишите свои эмоции:
               </legend>
               <div class="form__textarea-wrapper">
-                <textarea class="form__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea  class="form__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
+              <button class="form__button" type="button" >
+                Отправить отзыв
+              </button>
+              <p class="form__required">
+                * — обязательные поля
+              </p>
             </fieldset>
           </form>
         </section>
@@ -265,5 +277,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/main.js"></script>
   </body>
 </html>
