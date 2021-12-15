@@ -15,6 +15,8 @@
     &:nth-child(2) {
       .advantage__text {
         min-width: 192px;
+        margin-left: 70px;
+        margin-right: 70px;
       }
     }
   }
@@ -70,21 +72,8 @@
 .advantage__text {
   display: flex;
   flex-direction: column;
-  min-width: 256px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  @media (min-width: @tablet-width) {
-    width: 191px;
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 290px;
-    margin-left: 52px;
-    margin-right: 52px;
-  }
+  width: 250px;
+  margin: 0 auto;
 }
 
 .advantage__title {
@@ -93,26 +82,10 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin: 25px auto 20px;
+  margin: 0 auto 13px;
 
   @media (min-width: @tablet-width) {
-    margin: 41px auto 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 47px auto 20px;
-  }
-}
-
-.advantage__title--first-child-indent {
-  @media (max-width: @mobile-width-only) {
-    padding-top: 71px;
-  }
-}
-
-.advantage__title--second-child-indent {
-  @media (max-width: @mobile-width-only) {
-    padding-top: 39px;
+    width: 130px;
   }
 }
 
@@ -122,11 +95,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 15px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 20px;
-  }
+  margin: 0 0 13px 0;
 }
 
 .advantage__description {
@@ -134,32 +103,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 20px;
-  width: 147px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 42px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0 auto 57px;
-  }
-}
-
-.advantage__description--first-child-indent {
-  width: auto;
-
-  @media (min-width: @desktop-width) {
-    margin: 0 32px 39px;
-  }
-}
-
-.advantage__description--second-child-indent {
-  width: auto;
-
-  @media (min-width: @desktop-width) {
-    margin: 0 32px 35px;
-  }
+  margin: 0 auto;
 }
 
 .advantage__image {
@@ -174,4 +118,124 @@
 
 .advantage__image--wrapper {
   width: 100%;
+}
+
+// city
+.advantage__text--bridge-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 41px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 47px;
+    margin-bottom: 57px;
+  }
+}
+
+.advantage__title--city-indent {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 30px;
+  }
+}
+
+.advantage__title--city-width {
+  width: 128px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
+}
+
+.advantage__description--city-width {
+  @media (min-width: @desktop-width) {
+    width: 270px;
+  }
+}
+
+// bridge
+.advantage__text--city-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 43px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 52px;
+  }
+}
+
+.advantage__title--bridge-indent {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 39px;
+  }
+}
+
+.advantage__title--bridge-width {
+  width: 128px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
+}
+
+.advantage__description--bridge-width {
+  @media (min-width: @desktop-width) {
+    width: 230px;
+  }
+}
+
+// square
+.advantage__text--square-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 41px;
+  }
+}
+
+.advantage__text--square-size {
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 293px;
+  }
+}
+
+// street
+.advantage__text--street-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 41px;
+  }
+}
+
+.advantage__text--street-size {
+  @media (min-width: @tablet-width) {
+    width: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 275px;
+  }
+}
+
+// tourists
+.advantage__text--tourists-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 41px;
+  }
+}
+
+.advantage__text--tourists-size {
+  @media (min-width: @tablet-width) {
+    width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 271px;
+  }
 }
