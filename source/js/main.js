@@ -3,7 +3,7 @@ let navToggle = document.querySelector('.main-nav__button');
 let navList = document.querySelector('.main-nav__list')
 
 
-navToggle.addEventListener('click', function() {
+navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
