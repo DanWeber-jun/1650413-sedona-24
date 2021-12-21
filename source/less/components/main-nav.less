@@ -20,8 +20,20 @@
   }
 }
 
-.main-nav__header-logo--max-desktop {
+.main-nav__header-logo--max-mobile {
   @media (max-width: @desktop-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__header-logo--min-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
     display: block;
   }
 
@@ -31,9 +43,7 @@
 }
 
 .main-nav__header-logo--min-desktop {
-  @media (max-width: @desktop-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
