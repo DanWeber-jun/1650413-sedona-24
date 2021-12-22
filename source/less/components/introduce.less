@@ -1,12 +1,55 @@
 .introduce {
-  background-image: url("../../img/mobile/index/introduce-section/introduce.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-color: #191919;
+
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/index/introduce-section/introduce.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 389px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/introduce-section/introduce@2x.jpg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index/introduce-section/introduce-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/introduce-section/introduce-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/index/introduce-section/introduce-desktop.jpg");
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/introduce-section/introduce-desktop@2x.jpg");
+    }
+  }
 }
 
 .introduce--inner {
   display: block;
   background-position: bottom;
+
+  @media (max-width: @mobile-width-only) {
+    min-height: 158px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 300px;
+  }
 }
 
 .introduce__img--main {
@@ -20,4 +63,29 @@
 
 .introduce__img-wrapper {
   text-align: center;
+  padding-top: 77px;
+}
+
+.introduce__img-wrapper--inner {
+  padding-top: 52px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+  }
+}
+
+.introduce__img-wrapper--max-mobile {
+  display: inline;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.introduce__img-wrapper--min-tablet {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  display: inline;
 }
