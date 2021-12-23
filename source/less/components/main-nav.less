@@ -21,6 +21,14 @@
   border: none;
   z-index: 11;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -200,6 +208,17 @@
   background-color: #81b3d2;
   padding-top: 10px;
   padding-bottom: 5px;
+
+  @media (max-width: @mobile-width-only) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
