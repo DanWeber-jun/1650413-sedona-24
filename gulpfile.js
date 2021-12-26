@@ -7,6 +7,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'terser';
 
 // Styles
 
@@ -19,7 +20,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -27,8 +28,16 @@ export const styles = () => {
 
 export const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('source'))
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'))
+}
+
+//Scripts
+
+export const scripts = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
 }
 
 // Server
@@ -36,7 +45,7 @@ export const html = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -49,10 +58,11 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/js/main.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, scripts, styles, server, watcher
 );
