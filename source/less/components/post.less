@@ -1,6 +1,10 @@
 .post {
   position: relative;
 
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 38px;
+  }
+
   @media (min-width: @tablet-width) {
     .post__img-wrapper {
       width: 324px;
@@ -29,16 +33,24 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .post {
-    margin-bottom: 44px;
+  .post:first-child {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #d6d6d6;
+      width: 320px;
+      left: -20px;
+      height: 1px;
+      top: -21px;
+    }
   }
 
   .post::after {
     content: "";
     position: absolute;
     background-color: #d6d6d6;
-    width: 100%;
-    left: 0;
+    width: 320px;
+    left: -20px;
     height: 1px;
     bottom: -21px;
   }
@@ -50,7 +62,7 @@
 
 
 .post__figure {
-  margin: 0;
+  margin: 0 0 6px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: -5px;
@@ -111,14 +123,18 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0 0 13px;
+  }
 }
 
 .post__likes {
+  display: flex;
   flex-direction: row;
 
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-right: 21px;
   }

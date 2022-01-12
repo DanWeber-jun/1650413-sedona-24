@@ -1,35 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url( "img/index/mobile-pixel-glass.png" );
-    }
-    /* Планшет */
-    @media ( min-width: 760px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url( "img/index/tablet-pixel-glass.png" );
-      }
-    }
-    /* Десктоп */
-    @media ( min-width: 960px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url( "img/index/desktop-pixel-glass.png" );
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicons/32.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
@@ -96,11 +73,11 @@
                   <div class="advantage__image--wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-desktop.webp, img/index/advantages-section/first-img/photo-city-desktop@2x.webp 2x">
+                        srcset="img/index/advantages-section/first-img/photo-city-desktop.jpg, img/index/advantages-section/first-img/photo-city-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-tablet.webp, img/index/advantages-section/first-img/photo-city-tablet@2x.webp 2x">
-                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.webp 1x"
-                        srcset="img/index/advantages-section/first-img/photo-city@2x.webp 2x"
+                        srcset="img/index/advantages-section/first-img/photo-city-tablet.jpg, img/index/advantages-section/first-img/photo-city-tablet@2x.jpg 2x">
+                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.jpg"
+                        srcset="img/index/advantages-section/first-img/photo-city@2x.jpg 2x"
                         alt="Здания Седоны с флагами на стенах" width="520" height="260">
                     </picture>
                   </div>

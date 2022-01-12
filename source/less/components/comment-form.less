@@ -5,6 +5,16 @@
   text-transform: uppercase;
   text-align: center;
   margin: 36px 0 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin: 36px 0 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    margin: 112px 0 33px;
+  }
 }
 
 .comment-form__subtitle {
@@ -12,9 +22,15 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 37px;
+  margin: 0 auto 57px;
 
   @media (min-width: @tablet-width) {
-    width: 434px;
+    width: 440px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+    margin-bottom: 55px;
   }
 }
