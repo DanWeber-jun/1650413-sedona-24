@@ -35,20 +35,35 @@
   }
 }
 
+.introduce--main {
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
 .introduce--inner {
   display: block;
   background-position: bottom;
 
   @media (max-width: @mobile-width-only) {
     min-height: 158px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @tablet-width) {
     min-height: 290px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 300px;
+    margin-bottom: 100px;
   }
 }
 

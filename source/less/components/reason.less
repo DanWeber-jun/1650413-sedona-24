@@ -1,26 +1,18 @@
 .reason {
-  display: grid;
-  grid-template-columns: 49px 1fr;
-  grid-template-rows: 40px 1fr;
-  margin-top: 26px;
-  width: 320px;
-
-  &:nth-child(2) {
-    order: 3;
-  }
-
-  &:last-child {
-    @media (max-width: @mobile-width-only) {
-      margin-bottom: 35px;
-    }
+  @media (max-width: @mobile-width-only) {
+    margin: 0;
+    margin-top: 18px;
   }
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 45px 1fr 2fr;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 256px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -29,49 +21,105 @@
 }
 
 .reason__image {
-  height: 40px;
-  margin: 0 auto;
-  align-self: center;
-  grid-column: ~"1 / 2";
-  grid-row: ~"1 / 2";
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    left: 21px;
+  }
 
   @media (min-width: @tablet-width) {
-    grid-column: ~"1 / 2";
-    grid-row: ~"1 / 2";
-    margin-bottom: 26px;
+    margin: 60px 0 5px 0;
+  }
+}
+
+.reason__image--width-mobile {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.reason__image--width-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.reason__text {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 9px;
   }
 }
 
 .reason__title {
-  grid-column: ~"2 / 3";
-  grid-row: ~"1 / 2";
-  align-self: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
 
+  @media (max-width: @mobile-width-only) {
+    margin: 0 0 15px 0;
+  }
+
   @media (min-width: @tablet-width) {
-    grid-column: ~"1 / 2";
-    grid-row: ~"2 / 3";
+    font-size: 21px;
     text-align: center;
-    margin: 0 auto 23px;
   }
 }
 
 .reason__description {
-  grid-column: ~"2 / 3";
-  grid-row: ~"2 / 3";
-  align-self: flex-start;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   width: 210px;
 
+  @media (max-width: @mobile-width-only) {
+    margin: 0;
+  }
+
   @media (min-width: @tablet-width) {
-    grid-column: ~"1 / 2";
-    grid-row: ~"3 / 4";
     text-align: center;
-    margin: 0 auto;
+    width: 193px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin-bottom: 81px;
+  }
+}
+
+.reason__description--gift-width {
+  @media (min-width: @tablet-width) {
+    width: 193px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 215px;
+  }
+}
+
+.reason__description--gift-space {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reason__description--burger-width {
+  @media (min-width: @tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
   }
 }

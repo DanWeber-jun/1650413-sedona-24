@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicons/32.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
@@ -60,7 +63,7 @@
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper advantage__wrapper--background-svg">
                   <div class="advantage__text advantage__text--city-width advantage__text--city-indent">
-                    <h3 class="advantage__title advantage__title--city-width advantage__title--city-indent">Настоящий
+                    <h3 class="advantage__title  advantage__title--city-indent">Настоящий
                       городок</h3>
                     <p class="advantage__number">№1</p>
                     <p
@@ -70,11 +73,11 @@
                   <div class="advantage__image--wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-desktop.webp, img/index/advantages-section/first-img/photo-city-desktop@2x.webp 2x">
+                        srcset="img/index/advantages-section/first-img/photo-city-desktop.jpg, img/index/advantages-section/first-img/photo-city-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-tablet.webp, img/index/advantages-section/first-img/photo-city-tablet@2x.webp 2x">
-                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.webp 1x"
-                        srcset="img/index/advantages-section/first-img/photo-city@2x.webp 2x"
+                        srcset="img/index/advantages-section/first-img/photo-city-tablet.jpg, img/index/advantages-section/first-img/photo-city-tablet@2x.jpg 2x">
+                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.jpg"
+                        srcset="img/index/advantages-section/first-img/photo-city@2x.jpg 2x"
                         alt="Здания Седоны с флагами на стенах" width="520" height="260">
                     </picture>
                   </div>
@@ -82,25 +85,42 @@
                 <div class="advantage__reasons reasons">
                   <ul class="reasons__list">
                     <li class="reasons__item reason">
-                      <svg class="reason__image" aria-hidden="true" focusable="false"  viewBox="0 0 39 37">
+                      <svg class="reason__image reason__image--width-mobile" aria-hidden="true" focusable="false" width="39" height="37"  viewBox="0 0 39 37">
                         <use xlink:href="img/sprite.svg#icon-house"></use>
                       </svg>
-                      <h3 class="reason__title">Жильё</h3>
-                      <p class="reason__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                    </li>
-                    <li class="reason">
-                      <svg class="reason__image" aria-hidden="true" focusable="false" viewBox="0 0 32 38">
-                        <use xlink:href="img/sprite.svg#icon-gift"></use>
+                      <svg class="reason__image reason__image--width-tablet" aria-hidden="true" focusable="false" width="75" height="72" viewBox="0 0 75 72">
+                        <use xlink:href="img/sprite.svg#icon-house-tablet"></use>
                       </svg>
-                      <h3 class="reason__title">Сувениры</h3>
-                      <p class="reason__description">Не только китайского, но и местного производства!</p>
+                      <div class="reason__text">
+                        <h3 class="reason__title">
+                          Жильё
+                        </h3>
+                        <p class="reason__description reason__description--house-width">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                      </div>
                     </li>
                     <li class="reasons__item reason">
-                      <svg class="reason__image" aria-hidden="true" focusable="false" viewBox="0 0 40 35">
+                      <svg class="reason__image reason__image--width-mobile" aria-hidden="true" focusable="false" width="32" height="38" viewBox="0 0 32 38">
+                        <use xlink:href="img/sprite.svg#icon-gift"></use>
+                      </svg>
+                      <svg class="reason__image reason__image--width-tablet" aria-hidden="true" focusable="false" width="64" height="75" viewBox="0 0 64 75">
+                        <use xlink:href="img/sprite.svg#icon-gift-tablet"></use>
+                      </svg>
+                      <div class="reason__text">
+                        <h3 class="reason__title">Сувениры</h3>
+                        <p class="reason__description reason__description--gift-width">Не только китайского,<br class="reason__description--gift-space"> но и местного производства!</p>
+                      </div>
+                    </li>
+                    <li class="reasons__item reason">
+                      <svg class="reason__image reason__image--width-mobile" aria-hidden="true" focusable="false" width="40" height="35" viewBox="0 0 40 35">
                         <use xlink:href="img/sprite.svg#icon-burger"></use>
                       </svg>
-                      <h3 class="reason__title">Еда</h3>
-                      <p class="reason__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                      <svg class="reason__image reason__image--width-tablet" aria-hidden="true" focusable="false" width="76" height="68" viewBox="0 0 76 68">
+                        <use xlink:href="img/sprite.svg#icon-burger-tablet"></use>
+                      </svg>
+                      <div class="reason__text">
+                        <h3 class="reason__title">Еда</h3>
+                        <p class="reason__description reason__description--burger-width">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -110,9 +130,9 @@
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper">
                   <div class="advantage__text advantage__text--bridge-width advantage__text--bridge-indent">
-                    <h3 class="advantage__title advantage__title--bridge--width advantage__title--bridge-indent">Там
-                      есть мост дьявола</h3>
-                    <p class="advantage__number">№2</p>
+                    <h3 class="advantage__title advantage__title--bridge--width advantage__title--bridge-indent">
+                      Там есть <br class="advantage__title--bridge-space"> мост дьявола</h3>
+                    <p class="advantage__number advantage__number--indent-bridge">№2</p>
                     <p
                       class="advantage__description advantage__description--bridge-width advantage__description--bridge-indent">
                       Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -135,7 +155,7 @@
               <div class="advantage__text advantage__text--square-size advantage__text--square-indent">
                 <h3 class="advantage__title advantage__title--square-width">Небольшая площадь</h3>
                 <p class="advantage__number">№3</p>
-                <p class="advantage__description advantage__description--square-width">ВСЕ интересные места находятся
+                <p class="advantage__description advantage__description--square-width">Вce интересные места находятся
                   очень близко</p>
               </div>
             </li>
@@ -161,7 +181,7 @@
       <section class="main__hotels-search hotels-search">
         <div class="container">
           <h2 class="hotels-search__title">Заинтересовались?</h2>
-          <p class="hotels-search__description">Укажите предполагаемые даты<br>поездки, и мы покажем вам лучшие
+          <p class="hotels-search__description">Укажите предполагаемые даты поездки,<br class="hotels-search__description--space"> и мы покажем вам лучшие
             предложения гостиниц в седоне</p>
         </div><button class="hotels-search__button" type="button">Найти гостиницу</button>
         <picture>

@@ -15,8 +15,8 @@
     &:nth-child(2) {
       .advantage__text {
         min-width: 192px;
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 32px;
+        margin-right: 32px;
       }
     }
   }
@@ -28,13 +28,16 @@
     &:nth-child(2) {
       .advantage__text {
         min-width: 295px;
+        margin-left: 53px;
+        margin-right: 53px;
       }
     }
   }
 }
 
-@media (max-width: @mobile-width-only) {
-  .advantage:not(:first-child):not(:nth-child(2)):not(:nth-child(3))::before {
+
+.advantage:not(:first-child):not(:nth-child(2)):not(:nth-child(3))::before {
+  @media (max-width: @mobile-width-only) {
     content: "";
     position: absolute;
     background-color: #d6d6d6;
@@ -63,8 +66,10 @@
 .advantage__wrapper--background-svg {
   background-image: url("../img/index/advantages-section/first-advantage-background.svg");
   background-repeat: no-repeat;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     background-image: none;
   }
 }
@@ -74,6 +79,10 @@
   flex-direction: column;
   width: 250px;
   margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+  }
 }
 
 .advantage__title {
@@ -82,9 +91,11 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 13px;
+  margin: 0 auto 11px;
+
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
     width: 130px;
   }
 }
@@ -95,7 +106,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 13px 0;
+  margin: 0 0 24px;
 }
 
 .advantage__description {
@@ -103,7 +114,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .advantage__image {
@@ -121,26 +132,24 @@
 }
 
 // city
-.advantage__text--bridge-indent {
-  @media (min-width: @tablet-width) {
-    margin-top: 41px;
-    margin-bottom: 42px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 47px;
-    margin-bottom: 57px;
-  }
-}
 
 .advantage__title--city-indent {
   @media (max-width: @mobile-width-only) {
-    padding-top: 30px;
+    padding-top: 71px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
+    margin-bottom: 14px;
   }
 }
 
 .advantage__title--city-width {
-  width: 128px;
+  width: 200px;
 
   @media (min-width: @tablet-width) {
     width: 150px;
@@ -154,29 +163,38 @@
 }
 
 // bridge
-.advantage__text--city-indent {
+
+.advantage__text--bridge-indent {
   @media (min-width: @tablet-width) {
-    margin-top: 43px;
-    margin-bottom: 40px;
+    margin-top: 4px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 51px;
-    margin-bottom: 52px;
+    margin-top: 13px;
   }
 }
 
 .advantage__title--bridge-indent {
-  @media (max-width: @mobile-width-only) {
+  margin-top: 21px;
+
+  @media (min-width: @tablet-width) {
     margin-top: 39px;
   }
 }
 
-.advantage__title--bridge-width {
-  width: 128px;
+.advantage__title--bridge--width {
+  width: 220px;
 
   @media (min-width: @tablet-width) {
-    width: 150px;
+    width: 200px;
+  }
+}
+
+.advantage__title--bridge-space {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -184,6 +202,10 @@
   @media (min-width: @desktop-width) {
     width: 230px;
   }
+}
+
+.advantage__number--indent-bridge {
+  margin: 0 auto 30px;
 }
 
 // square
