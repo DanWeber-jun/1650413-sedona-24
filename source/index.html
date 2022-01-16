@@ -62,12 +62,14 @@
             <li class="advantages__item advantage">
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper advantage__wrapper--background-svg">
-                  <div class="advantage__text advantage__text--city-width advantage__text--city-indent">
+                  <div class="advantage__text advantage__text--accent advantage__text--city-indent">
                     <h3 class="advantage__title  advantage__title--city-indent">Настоящий
                       городок</h3>
-                    <p class="advantage__number">№1</p>
+                    <div class="advantage__number--elements">
+                      <p class="advantage__number advantage__number--accent-color">№1</p>
+                    </div>
                     <p
-                      class="advantage__description advantage__description--city-width advantage__description--city-indent">
+                      class="advantage__description advantage__description--city-width advantage__description--city-indent advantage__description--accent-color">
                       Седона не аттракцион для туристов, там течет своя жизнь</p>
                   </div>
                   <div class="advantage__image--wrapper">
@@ -129,12 +131,14 @@
             <li class="advantages__item advantage">
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper">
-                  <div class="advantage__text advantage__text--bridge-width advantage__text--bridge-indent">
+                  <div class="advantage__text advantage__text--accent advantage__text--bridge-indent">
                     <h3 class="advantage__title advantage__title--bridge--width advantage__title--bridge-indent">
                       Там есть <br class="advantage__title--bridge-space"> мост дьявола</h3>
-                    <p class="advantage__number advantage__number--indent-bridge">№2</p>
+                    <div class="advantage__number--elements">
+                      <p class="advantage__number advantage__number--indent-bridge advantage__number--accent-color">№2</p>
+                    </div>
                     <p
-                      class="advantage__description advantage__description--bridge-width advantage__description--bridge-indent">
+                      class="advantage__description advantage__description--bridge-indent advantage__description--accent-color">
                       Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                   <div class="advantage__image--wrapper">
@@ -152,25 +156,31 @@
               </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text advantage__text--square-size advantage__text--square-indent">
+              <div class="advantage__text  advantage__text--square-indent">
                 <h3 class="advantage__title advantage__title--square-width">Небольшая площадь</h3>
-                <p class="advantage__number">№3</p>
+                <div class="advantage__number--elements">
+                  <p class="advantage__number">№3</p>
+                </div>
                 <p class="advantage__description advantage__description--square-width">Вce интересные места находятся
                   очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text advantage__text--street-size advantage__text--street-indent">
+              <div class="advantage__text  advantage__text--street-indent">
                 <h3 class="advantage__title advantage__title--street-width">Красивая дорога</h3>
-                <p class="advantage__number">№4</p>
+                <div class="advantage__number--elements">
+                  <p class="advantage__number">№4</p>
+                </div>
                 <p class="advantage__description advantage__description--street-width">Ехать в Седону из Лас-Вегаса
                   совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text advantage__text--tourists-size advantage__text--tourists-indent">
+              <div class="advantage__text  advantage__text--tourists-indent">
                 <h3 class="advantage__title advantage__title--tourists-width">Мало туристов</h3>
-                <p class="advantage__number">№5</p>
+                <div class="advantage__number--elements">
+                  <p class="advantage__number">№5</p>
+                </div>
                 <p class="advantage__description advantage__description--tourists-width">Большинство едет в Гранд Каньон
                   и толпится там</p>
               </div>
@@ -224,11 +234,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright"><a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <p class="page-footer__copyright-text">Разработано</p><svg xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" focusable="false" width="27" height="35" fill="none">
-              <path
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-                fill="#000" />
+            <p class="page-footer__copyright-text">Разработано</p>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="27" height="35">
+              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
             </svg>
           </a></div>
       </div>

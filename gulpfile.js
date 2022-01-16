@@ -57,6 +57,13 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+// Models
+
+const models = () => {
+  return gulp.src('source/project-models/*.png')
+    .pipe(gulp.dest('build/img'))
+}
+
 //WebP
 
 const createWebp = () => {
@@ -154,6 +161,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  models,
   gulp.parallel(
     styles,
     html,

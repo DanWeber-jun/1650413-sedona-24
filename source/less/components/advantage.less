@@ -8,29 +8,25 @@
     }
   }
 
-  @media (min-width: @tablet-width) {
-    min-width: 256px;
-
-    &:nth-child(1),
+  @media (max-width: @mobile-width-only) {
     &:nth-child(2) {
-      .advantage__text {
-        min-width: 192px;
-        margin-left: 32px;
-        margin-right: 32px;
+      .advantage__image--wrapper {
+        margin-bottom: 25px;
       }
     }
   }
 
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+  }
+
   @media (min-width: @desktop-width) {
     min-width: 400px;
+  }
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      .advantage__text {
-        min-width: 295px;
-        margin-left: 53px;
-        margin-right: 53px;
-      }
+  &:last-child {
+    .advantage__description {
+      margin-bottom: 0;
     }
   }
 }
@@ -43,6 +39,7 @@
     background-color: #d6d6d6;
     width: 280px;
     height: 1px;
+    top: -21px;
     left: 0;
     margin-left: 20px;
     margin-right: 20px;
@@ -77,11 +74,32 @@
 .advantage__text {
   display: flex;
   flex-direction: column;
-  width: 250px;
   margin: 0 auto;
 
   @media (max-width: @mobile-width-only) {
     width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 293px;
+  }
+}
+
+.advantage__text--accent {
+  @media (min-width: @tablet-width) {
+    min-width: 192px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 295px;
+    margin-left: 53px;
+    margin-right: 53px;
   }
 }
 
@@ -100,6 +118,10 @@
   }
 }
 
+.advantage__number--elements::before {
+  position: relative;
+}
+
 .advantage__number {
   position: relative;
   font-size: 14px;
@@ -107,6 +129,51 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 24px;
+  color: #333333;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #333333;
+    top: 10px;
+    left: 115px;
+
+    @media (min-width: @desktop-width) {
+      top: 10px;
+      left: 120px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #333333;
+    top: 10px;
+    right: 115px;
+
+    @media (min-width: @desktop-width) {
+      top: 10px;
+      right: 120px;
+    }
+  }
+}
+
+.advantage__number--accent-color {
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    background-color: #ffffff;
+  }
 }
 
 .advantage__description {
@@ -115,6 +182,11 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto 40px;
+  color: #333333;
+}
+
+.advantage__description--accent-color {
+  color: #ffffff;
 }
 
 .advantage__image {
@@ -198,14 +270,16 @@
   }
 }
 
-.advantage__description--bridge-width {
-  @media (min-width: @desktop-width) {
-    width: 230px;
-  }
+.advantage__description--bridge-indent {
+  margin-bottom: 36px;
 }
 
 .advantage__number--indent-bridge {
   margin: 0 auto 30px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 17px;
+  }
 }
 
 // square
@@ -216,31 +290,23 @@
   }
 }
 
-.advantage__text--square-size {
-  @media (min-width: @tablet-width) {
-    width: 200px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 293px;
-  }
-}
-
 // street
-.advantage__text--street-indent {
-  @media (min-width: @tablet-width) {
-    margin-top: 42px;
-    margin-bottom: 41px;
-  }
-}
+.advantage__description--street-width {
+  width: 210px;
 
-.advantage__text--street-size {
   @media (min-width: @tablet-width) {
     width: 140px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 275px;
+    width: 260px;
+  }
+}
+
+.advantage__text--street-indent {
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 41px;
   }
 }
 
@@ -252,12 +318,14 @@
   }
 }
 
-.advantage__text--tourists-size {
+.advantage__description--tourists-width {
+  width: 255px;
+
   @media (min-width: @tablet-width) {
-    width: 175px;
+    width: 150px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 271px;
+    width: auto;
   }
 }

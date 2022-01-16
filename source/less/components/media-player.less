@@ -46,6 +46,15 @@
       margin-right: 23px;
       right: 0;
     }
+
+    &:hover {
+      fill: #333333;
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: rgba(0, 0, 0, 0.3);
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -55,6 +64,15 @@
 
     &:last-child {
       margin-right: 42px;
+    }
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: rgb(255, 255, 255, 0.3);
     }
   }
 }
@@ -73,5 +91,14 @@
 
   @media (max-width: @mobile-width-only) {
     fill: #5c6870;
+  }
+
+  &:hover {
+    fill: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+
+  &:active {
+    fill: rgb(255, 255, 255, 0.3);
   }
 }

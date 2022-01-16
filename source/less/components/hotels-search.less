@@ -1,3 +1,9 @@
+.hotels-search {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 31px;
+  }
+}
+
 .hotels-search__title {
   font-size: 21px;
   font-weight: 700;
@@ -6,9 +12,13 @@
   text-align: center;
   margin: 80px auto 32px;
 
+  @media (max-width: @mobile-width-only) {
+    margin: 57px auto 24px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 30px;
-    margin: 18px auto 32px;
+    margin: 18px auto 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,6 +32,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto 27px;
+  color: #333333;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto 40px;
