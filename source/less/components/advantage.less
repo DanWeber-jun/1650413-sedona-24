@@ -3,8 +3,10 @@
   position: relative;
 
   &:nth-child(2) {
-    .advantage__image--wrapper {
-      order: -1;
+    @media (min-width: @desktop-width) {
+      .advantage__image-wrapper {
+        order: -1;
+      }
     }
   }
 
@@ -109,10 +111,6 @@
     font-size: 21px;
     width: 130px;
   }
-}
-
-.advantage__number-elements::before {
-  position: relative;
 }
 
 .advantage__number {
@@ -295,8 +293,6 @@
 }
 
 .advantage__number--indent-bridge {
-  margin: 0 auto 30px;
-
   @media (max-width: @mobile-width-only) {
     margin: 0 0 17px;
   }
