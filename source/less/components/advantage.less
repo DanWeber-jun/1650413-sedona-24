@@ -8,26 +8,12 @@
     }
   }
 
-  @media (max-width: @mobile-width-only) {
-    &:nth-child(2) {
-      .advantage__image--wrapper {
-        margin-bottom: 25px;
-      }
-    }
-  }
-
   @media (min-width: @tablet-width) {
     min-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
-  }
-
-  &:last-child {
-    .advantage__description {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -39,7 +25,7 @@
     background-color: #d6d6d6;
     width: 280px;
     height: 1px;
-    top: -21px;
+    top: -2px;
     left: 0;
     margin-left: 20px;
     margin-right: 20px;
@@ -48,6 +34,10 @@
 
 .advantage:not(:first-child):not(:nth-child(2)) {
   background-color: #eeeeee;
+
+  @media (max-width: @mobile-width-only) {
+    min-height: 168px;
+  }
 }
 
 .advantage__wrapper {
@@ -111,6 +101,9 @@
   text-align: center;
   margin: 0 auto 11px;
 
+  @media (max-width: @mobile-width-only) {
+    margin: 24px auto 12px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -118,7 +111,7 @@
   }
 }
 
-.advantage__number--elements::before {
+.advantage__number-elements::before {
   position: relative;
 }
 
@@ -128,7 +121,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   color: #333333;
 
   &::before {
@@ -160,6 +153,14 @@
       right: 120px;
     }
   }
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0 0 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px;
+  }
 }
 
 .advantage__number--accent-color {
@@ -181,8 +182,12 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   color: #333333;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 24px;
+  }
 }
 
 .advantage__description--accent-color {
@@ -208,6 +213,7 @@
 .advantage__title--city-indent {
   @media (max-width: @mobile-width-only) {
     padding-top: 71px;
+    margin: 0 auto 11px;
   }
 
   @media (min-width: @tablet-width) {
@@ -228,10 +234,18 @@
   }
 }
 
+.advantage__number--city-indent {
+  margin: 0 0 20px;
+}
+
 .advantage__description--city-width {
   @media (min-width: @desktop-width) {
     width: 270px;
   }
+}
+
+.advantage__description--city-indent {
+  margin: 0 auto 35px;
 }
 
 // bridge
@@ -247,7 +261,7 @@
 }
 
 .advantage__title--bridge-indent {
-  margin-top: 21px;
+  margin: 40px auto 11px;
 
   @media (min-width: @tablet-width) {
     margin-top: 39px;
@@ -258,7 +272,7 @@
   width: 220px;
 
   @media (min-width: @tablet-width) {
-    width: 200px;
+    width: 180px;
   }
 }
 
@@ -270,15 +284,21 @@
   }
 }
 
+.advantage__description--bridge-width {
+  @media (min-width: @desktop-width) {
+    width: 220px;
+  }
+}
+
 .advantage__description--bridge-indent {
-  margin-bottom: 36px;
+  margin: 0 auto 36px;
 }
 
 .advantage__number--indent-bridge {
   margin: 0 auto 30px;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 17px;
+    margin: 0 0 17px;
   }
 }
 

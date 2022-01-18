@@ -35,15 +35,15 @@
   @media (max-width: @mobile-width-only) {
     position: absolute;
     fill: #5c6870;
-    bottom: -50px;
+    bottom: -48px;
 
     &:first-child {
-      margin-left: 25px;
+      margin-left: 20px;
       left: 0;
     }
 
     &:last-child {
-      margin-right: 23px;
+      margin-right: 16px;
       right: 0;
     }
 
@@ -59,11 +59,11 @@
 
   @media (min-width: @tablet-width) {
     &:first-child {
-      margin-left: 35px;
+      margin-left: 28px;
     }
 
     &:last-child {
-      margin-right: 42px;
+      margin-right: 37px;
     }
 
     &:hover {
@@ -78,11 +78,17 @@
 }
 
 .media-player__button--subtitles {
-  margin-right: 31px;
-
   @media (max-width: @mobile-width-only) {
-    margin-right: 74px;
+    margin-right: 68px;
     right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 19px;
   }
 }
 

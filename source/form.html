@@ -17,104 +17,110 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed"><a class="main-nav__header-logo" href="index.html">
+        <nav class="main-nav main-nav--closed">
+          <a class="main-nav__header-logo" href="#">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/index/header/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg"><img
-                src="img/index/header/logotype.svg" alt="Логотиа Седоны">
+              <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg">
+              <img src="img/index/header/logotype.svg" alt="Логотиа Седоны">
             </picture>
-          </a><button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню"><span
-              class="main-nav__toggle"></span></button>
+          </a>
+          <button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню">
+            <span class="main-nav__toggle"></span>
+          </button>
           <ul class="main-nav__list main-nav__list--closed">
-            <li class="main-nav__list--left-list">
+            <li class="main-nav__item main-nav__item--left-list">
               <ul class="main-nav__list-inserted">
-                <li class="main-nav__item main-nav__item--first-border"><a class="main-nav__item-link"
-                    href="index.html">Главная</a></li>
-                <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Фото и видео</a></li>
+                <li class="main-nav__item-inserted main-nav__item-inserted--first-border">
+                  <a class="main-nav__link " href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item-inserted">
+                  <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+                </li>
               </ul>
             </li>
-            <li class="main-nav__list--right-list">
+            <li class="main-nav__item main-nav__item--right-list">
               <ul class="main-nav__list-inserted">
-                <li class="main-nav__item"><a class="main-nav__item-link main-nav__item--current-link" href="#">Форма
-                    отзыва</a></li>
-                <li class="main-nav__item main-nav__item--last-border"><a class="main-nav__item-link"
-                    href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+                <li class="main-nav__item-inserted">
+                  <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
+                </li>
+                <li class="main-nav__item-inserted main-nav__item-inserted--last-border">
+                  <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+                </li>
               </ul>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="main main__inner main__inner--form">
+      <main class="main main--inner main--form">
         <div class="main__introduce introduce introduce--inner container">
           <div class="introduce__img-wrapper introduce__img-wrapper--inner">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/catalog/introduce-section/SEDONA-tablet.svg"><img
-                src="img/catalog/introduce-section/SEDONA.svg" alt="Большой текст приветствия от Седоны">
+              <source media="(min-width: 768px)" srcset="img/catalog/introduce-section/SEDONA-tablet.svg">
+              <img src="img/catalog/introduce-section/SEDONA.svg" alt="Большой текст приветствия от Седоны">
             </picture>
           </div>
         </div>
         <section class="comment-form container">
           <h1 class="comment-form__title">Оставьте свой отзыв</h1>
-          <p class="comment-form__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-            вами достопримечательностях</p>
+          <p class="comment-form__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="comment-form__form form" action="https://echo.htmlacademy.ru/" method="POST">
             <fieldset class="form__group form__group--name">
-              <div class="form__title--name-elements">
+              <div class="form__title-wrapper form__title-wrapper--name">
                 <h3 class="form__title form__title--name">Представьтесь:</h3>
               </div>
               <ul class="form__list">
                 <li class="form__item form__item--name-indent">
-                  <div class="form__nomination-wrapper"><label class="form__input-nomination-name"
-                      for="first-name">Имя*:</label> <input class="form__input" id="first-name" type="text"
-                      placeholder="Петр" required></div>
+                  <div class="form__nomination-wrapper">
+                    <label class="form__input-nomination-name" for="first-name">Имя*:</label>
+                    <input class="form__input" id="first-name" type="text" placeholder="Петр" required>
+                  </div>
                 </li>
                 <li class="form__item form__item--name-indent">
-                  <div class="form__nomination-wrapper"><label class="form__input-nomination-name"
-                      for="last-name">Фамилия*:</label> <input class="form__input" id="last-name" type="text"
-                      placeholder="Иванов" required></div>
+                  <div class="form__nomination-wrapper">
+                    <label class="form__input-nomination-name" for="last-name">Фамилия*:</label>
+                    <input class="form__input" id="last-name" type="text" placeholder="Иванов" required>
+                  </div>
                 </li>
                 <li class="form__item form__item--name-indent">
-                  <div class="form__nomination-wrapper"><label class="form__input-nomination-name"
-                      for="patronymic">Отчество:</label> <input class="form__input" id="patronymic" type="text"
-                      placeholder="Александрович" required></div>
+                  <div class="form__nomination-wrapper">
+                    <label class="form__input-nomination-name" for="patronymic">Отчество:</label>
+                    <input class="form__input" id="patronymic" type="text" placeholder="Александрович" required>
+                  </div>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--contact">
-              <div class="form__title--contact-elements">
+              <div class="form__title-wrapper form__title-wrapper--contact">
                 <h3 class="form__title form__title--contact-indent">Контактная информация:</h3>
               </div>
               <ul class="form__list form__list--contact-input-direction">
                 <li class="form__item form__item--contact-input-direction">
                   <label class="form__input-nomination-contact" for="phone-number">
-                    <span class="nomination-contact--visible-mobile-media">Контактный</span>
-                    <span class="nomination-contact--visible-desktop">телефон*:</span>
+                    <span class="form__text form__text--visible-mobile-media">Контактный</span>
+                    <span class="form__text form__text--visible-desktop">телефон*:</span>
                   </label>
-                  <div class="form__contact-input--wrapper"><input class="form__input form__input--spin" id="phone-number"
-                      type="number" placeholder="Введите телефон">
+                  <div class="form__input-wrapper">
+                    <input class="form__input form__input--width form__input--spin" id="phone-number" type="number" placeholder="Введите телефон">
                     <div class="form__icon-wrapper">
-                      <div class="form__icon"><svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg"
-                          width="18" height="18" fill="none">
-                          <path
-                            d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z"
-                            fill="#010101" />
-                        </svg></div>
+                      <div class="form__icon">
+                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                          <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li class="form__item form__item--contact-input-direction">
-                  <label class="form__input-nomination-contact" for="e-mail">
-                    Электронная почта*:
-                  </label>
-                  <div class="form__contact-input--wrapper">
-                    <input class="form__input" id="e-mail" type="email" placeholder="Введите e-mail" required>
+                  <label class="form__input-nomination-contact" for="e-mail">Электронная почта*:</label>
+                  <div class="form__input-wrapper">
+                    <input class="form__input form__input--width" id="e-mail" type="email" placeholder="Введите e-mail" required>
                     <div class="form__icon-wrapper">
-                      <div class="form__icon"><svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg"
-                          width="16" height="12" fill="none">
-                          <path
-                            d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"
-                            fill="#000" />
-                        </svg></div>
+                      <div class="form__icon">
+                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none">
+                          <path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -123,42 +129,70 @@
             <fieldset class="form__group form__group--impression">
               <h3 class="form__title form__title--impression-indent">Ваше общее впечатление:</h3>
               <ul class="form__list form__list--impression-indent">
-                <li class="form__item form__item--impression-indent"><label class="form__label" for="radio-positiv"><input
-                      class="form__radio visually-hidden" id="radio-positiv" name="form__radio" type="radio"
-                      checked="checked"> <span class="form__mark"></span> <span class="form__name">Скорее
-                      положительное</span></label></li>
-                <li class="form__item form__item--impression-indent"><label class="form__label" for="radio-negativ"><input
-                      class="form__radio visually-hidden" id="radio-negativ" name="form__radio" type="radio"> <span
-                      class="form__mark"></span> <span class="form__name">Скорее отрицательное</span></label></li>
-                <li class="form__item form__item--impression-indent"><label class="form__label" for="neutral"><input
-                      class="form__radio visually-hidden" id="neutral" name="form__radio" type="radio"> <span
-                      class="form__mark"></span> <span class="form__name">Затрудняюсь ответить</span></label></li>
+                <li class="form__item form__item--impression-indent">
+                  <label class="form__label" for="radio-positiv">
+                    <input class="form__radio visually-hidden" id="radio-positiv" name="form__radio" type="radio" checked="checked">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="form__item form__item--impression-indent">
+                  <label class="form__label" for="radio-negativ">
+                    <input class="form__radio visually-hidden" id="radio-negativ" name="form__radio" type="radio">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="form__item form__item--impression-indent">
+                  <label class="form__label" for="neutral">
+                    <input class="form__radio visually-hidden" id="neutral" name="form__radio" type="radio">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Затрудняюсь ответить</span>
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--attraction">
-              <div class="form__title--attraction-elements">
+              <div class="form__title-wrapper form__title-wrapper--elements">
                 <h3 class="form__title form__title--attraction-indent">Посещенные достопримечательности:</h3>
               </div>
               <ul class="form__list form__list--attraction-indent">
-                <li class="form__item form__item--attraction-indent"><label class="form__label"><input class="form__checkbox visually-hidden"
-                      type="checkbox" checked="checked"> <span class="form__mark"></span> <span class="form__name">Мост
-                      Дьявола</span></label></li>
-                <li class="form__item form__item--attraction-indent"><label class="form__label"><input class="form__checkbox visually-hidden"
-                      type="checkbox" checked="checked"> <span class="form__mark"></span> <span
-                      class="form__name">Гора-Колокол</span></label></li>
-                <li class="form__item form__item--attraction-indent"><label class="form__label"><input class="form__checkbox visually-hidden"
-                      type="checkbox" checked="checked"> <span class="form__mark"></span> <span
-                      class="form__name">Слайд-парк</span></label></li>
-                <li class="form__item form__item--attraction-indent"><label class="form__label"><input class="form__checkbox visually-hidden"
-                      type="checkbox"> <span class="form__mark"></span> <span class="form__name">Красные
-                      скалы</span></label></li>
+                <li class="form__item form__item--attraction-indent">
+                  <label class="form__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox" checked="checked">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="form__item form__item--attraction-indent">
+                  <label class="form__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox" checked="checked">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="form__item form__item--attraction-indent">
+                  <label class="form__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox" checked="checked">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="form__item form__item--attraction-indent">
+                  <label class="form__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox">
+                    <span class="form__mark"></span>
+                    <span class="form__name">Красные скалы</span>
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--emotions">
               <h3 class="form__title form__title--emotions-indent">Опишите свои эмоции:</h3>
-              <div class="form__textarea-wrapper"><textarea class="form__textarea" name="text" cols="30" rows="10"
-                  placeholder="Опишите подробно все свои восторги"></textarea></div><button class="form__button"
-                type="button">Отправить отзыв</button>
+              <div class="form__textarea-wrapper">
+                <textarea class="form__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
+              <button class="form__button" type="button">Отправить отзыв</button>
               <p class="form__required">* — обязательные поля</p>
             </fieldset>
           </form>
@@ -192,33 +226,34 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer__copyright"><a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+          <div class="page-footer__copyright">
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
               <p class="page-footer__copyright-text">Разработано</p>
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="27" height="35">
                 <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
               </svg>
-            </a></div>
+            </a>
+          </div>
         </div>
       </footer>
       <!-- при отправеке ошибочной формы добавляется класс modal--opened -->
       <!-- при закрытии модального окна добавляется класс modal--closed -->
-      <div class="modal modal--error--opened modal--closed">
+      <div class="modal modal--error-opened modal--closed">
         <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
-        <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли
-          их заполнить</p><button class="modal__button modal__button--error-indent" type="button"><span>Oк</span></button>
+        <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--error-indent" type="button">Oк</button>
       </div><!-- при успешной отправку формы добавляется класс modal--opened -->
       <!-- при закрытии модального окна добавляется класс modal--closed -->
-      <div class="modal modal--successfull--opened modal--closed">
+      <div class="modal modal--successfull-opened modal--closed">
         <div class="container">
           <h2 class="modal__title modal__title--successfull">Ваш отзыв отправлен!</h2>
-          <p class="modal__description modal__description--successfull">Спасибо за ваше участие, ваш отзыв уже поступил к
-            нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__description modal__description--successfull">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <div class="modal__button-wrapper"><button class="modal__button" type="button"><span>Закрыть окно</span></button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>
     <script src="js/main.js"></script>
   </body>
-
 </html>

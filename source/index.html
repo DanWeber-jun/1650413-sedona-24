@@ -14,31 +14,39 @@
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed"><a class="main-nav__header-logo" href="#">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="main-nav__header-logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/index/header/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg"><img
-              src="img/index/header/logotype.svg" alt="Логотиа Седоны">
+            <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg">
+            <img src="img/index/header/logotype.svg" alt="Логотиа Седоны">
           </picture>
-        </a><button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню"><span
-            class="main-nav__toggle"></span></button>
+        </a>
+        <button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню">
+          <span class="main-nav__toggle"></span>
+        </button>
         <ul class="main-nav__list main-nav__list--closed">
-          <li class="main-nav__list--left-list">
+          <li class="main-nav__item main-nav__item--left-list">
             <ul class="main-nav__list-inserted">
-              <li class="main-nav__item main-nav__item--first-border"><a
-                  class="main-nav__item-link main-nav__item--current-link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Фото и видео</a></li>
+              <li class="main-nav__item-inserted main-nav__item-inserted--first-border">
+                <a class="main-nav__link main-nav__link--current">Главная</a>
+              </li>
+              <li class="main-nav__item-inserted">
+                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              </li>
             </ul>
           </li>
-          <li class="main-nav__list--right-list">
+          <li class="main-nav__item main-nav__item--right-list">
             <ul class="main-nav__list-inserted">
-              <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">Форма отзыва</a></li>
-              <li class="main-nav__item main-nav__item--last-border"><a class="main-nav__item-link"
-                  href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+              <li class="main-nav__item-inserted">
+                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item-inserted main-nav__item-inserted--last-border">
+                <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -49,8 +57,8 @@
         <div class="introduce__img-wrapper">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/index/introduce-section/text-index-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/index/introduce-section/text-index-tablet.svg"><img
-              src="img/index/introduce-section/text-index.svg" alt="Большой текст приветствия от Седоны">
+            <source media="(min-width: 768px)" srcset="img/index/introduce-section/text-index-tablet.svg">
+            <img src="img/index/introduce-section/text-index.svg" alt="Большой текст приветствия от Седоны">
           </picture>
         </div>
       </div>
@@ -63,24 +71,17 @@
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper advantage__wrapper--background-svg">
                   <div class="advantage__text advantage__text--accent advantage__text--city-indent">
-                    <h3 class="advantage__title  advantage__title--city-indent">Настоящий
-                      городок</h3>
-                    <div class="advantage__number--elements">
-                      <p class="advantage__number advantage__number--accent-color">№1</p>
+                    <h3 class="advantage__title  advantage__title--city-indent">Настоящий городок</h3>
+                    <div class="advantage__number-elements">
+                      <p class="advantage__number advantage__number advantage__number--accent-color">№1</p>
                     </div>
-                    <p
-                      class="advantage__description advantage__description--city-width advantage__description--city-indent advantage__description--accent-color">
-                      Седона не аттракцион для туристов, там течет своя жизнь</p>
+                    <p class="advantage__description advantage__description--city-width advantage__description--city-indent advantage__description--accent-color">Седона не аттракцион для туристов, там течет своя жизнь</p>
                   </div>
-                  <div class="advantage__image--wrapper">
+                  <div class="advantage__image-wrapper">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-desktop.jpg, img/index/advantages-section/first-img/photo-city-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/index/advantages-section/first-img/photo-city-tablet.jpg, img/index/advantages-section/first-img/photo-city-tablet@2x.jpg 2x">
-                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.jpg"
-                        srcset="img/index/advantages-section/first-img/photo-city@2x.jpg 2x"
-                        alt="Здания Седоны с флагами на стенах" width="520" height="260">
+                      <source media="(min-width: 1200px)" srcset="img/index/advantages-section/first-img/photo-city-desktop.jpg, img/index/advantages-section/first-img/photo-city-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/index/advantages-section/first-img/photo-city-tablet.jpg, img/index/advantages-section/first-img/photo-city-tablet@2x.jpg 2x">
+                      <img class="advantage__image" src="img/index/advantages-section/first-img/photo-city.jpg" srcset="img/index/advantages-section/first-img/photo-city@2x.jpg 2x" alt="Здания Седоны с флагами на стенах" width="520" height="260">
                     </picture>
                   </div>
                 </div>
@@ -94,9 +95,7 @@
                         <use xlink:href="img/sprite.svg#icon-house-tablet"></use>
                       </svg>
                       <div class="reason__text">
-                        <h3 class="reason__title">
-                          Жильё
-                        </h3>
+                        <h3 class="reason__title">Жильё</h3>
                         <p class="reason__description reason__description--house-width">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                       </div>
                     </li>
@@ -132,24 +131,17 @@
               <div class="advantage__reason advantage__reason--reason-accent">
                 <div class="advantage__wrapper">
                   <div class="advantage__text advantage__text--accent advantage__text--bridge-indent">
-                    <h3 class="advantage__title advantage__title--bridge--width advantage__title--bridge-indent">
-                      Там есть <br class="advantage__title--bridge-space"> мост дьявола</h3>
-                    <div class="advantage__number--elements">
+                    <h3 class="advantage__title advantage__title--bridge--width advantage__title--bridge-indent">Там есть <br class="advantage__title--bridge-space"> мост дьявола</h3>
+                    <div class="advantage__number-elements">
                       <p class="advantage__number advantage__number--indent-bridge advantage__number--accent-color">№2</p>
                     </div>
-                    <p
-                      class="advantage__description advantage__description--bridge-indent advantage__description--accent-color">
-                      Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <p class="advantage__description advantage__description--bridge-width advantage__description--bridge-indent advantage__description--accent-color"> Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
-                  <div class="advantage__image--wrapper">
+                  <div class="advantage__image-wrapper">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="img/index/advantages-section/second-img/photo-bridge-desktop.jpg, img/index/advantages-section/second-img/photo-bridge-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/index/advantages-section/second-img/photo-bridge-tablet.jpg, img/index/advantages-section/second-img/photo-bridge-tablet@2x.jpg 2x">
-                      <img class="advantage__image" src="img/index/advantages-section/second-img/photo-bridge.jpg"
-                        srcset="img/index/advantages-section/second-img/photo-bridge@2x.jpg 2x"
-                        alt="Здания Седоны с флагами на стенах" width="520" height="260">
+                      <source media="(min-width: 1200px)" srcset="img/index/advantages-section/second-img/photo-bridge-desktop.jpg, img/index/advantages-section/second-img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/index/advantages-section/second-img/photo-bridge-tablet.jpg, img/index/advantages-section/second-img/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="advantage__image" src="img/index/advantages-section/second-img/photo-bridge.jpg" srcset="img/index/advantages-section/second-img/photo-bridge@2x.jpg 2x" alt="Здания Седоны с флагами на стенах" width="520" height="260">
                     </picture>
                   </div>
                 </div>
@@ -158,31 +150,28 @@
             <li class="advantages__item advantage">
               <div class="advantage__text  advantage__text--square-indent">
                 <h3 class="advantage__title advantage__title--square-width">Небольшая площадь</h3>
-                <div class="advantage__number--elements">
+                <div class="advantage__number-elements">
                   <p class="advantage__number">№3</p>
                 </div>
-                <p class="advantage__description advantage__description--square-width">Вce интересные места находятся
-                  очень близко</p>
+                <p class="advantage__description advantage__description--square-width">Вce интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantage">
               <div class="advantage__text  advantage__text--street-indent">
                 <h3 class="advantage__title advantage__title--street-width">Красивая дорога</h3>
-                <div class="advantage__number--elements">
+                <div class="advantage__number-elements">
                   <p class="advantage__number">№4</p>
                 </div>
-                <p class="advantage__description advantage__description--street-width">Ехать в Седону из Лас-Вегаса
-                  совсем не скучно!</p>
+                <p class="advantage__description advantage__description--street-width">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantage">
               <div class="advantage__text  advantage__text--tourists-indent">
                 <h3 class="advantage__title advantage__title--tourists-width">Мало туристов</h3>
-                <div class="advantage__number--elements">
+                <div class="advantage__number-elements">
                   <p class="advantage__number">№5</p>
                 </div>
-                <p class="advantage__description advantage__description--tourists-width">Большинство едет в Гранд Каньон
-                  и толпится там</p>
+                <p class="advantage__description advantage__description--tourists-width">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
           </ol>
@@ -191,17 +180,14 @@
       <section class="main__hotels-search hotels-search">
         <div class="container">
           <h2 class="hotels-search__title">Заинтересовались?</h2>
-          <p class="hotels-search__description">Укажите предполагаемые даты поездки,<br class="hotels-search__description--space"> и мы покажем вам лучшие
-            предложения гостиниц в седоне</p>
-        </div><button class="hotels-search__button" type="button">Найти гостиницу</button>
+          <p class="hotels-search__description">Укажите предполагаемые даты поездки,<br class="hotels-search__description--space"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <button class="hotels-search__button" type="button">Найти гостиницу</button>
+        <!-- Временное промо --> 
         <picture>
-          <source media="(min-width: 1200px)"
-            srcset="img/index/hotels-search/map-desktop.png, img/index/hotels-search/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/index/hotels-search/map-tablet.png, img/index/hotels-search/map-tablet@2x.png 2x">
-          <!-- Временное промо --> <img class="hotels-search__img" src="img/index/hotels-search/map-mobile.png"
-            srcset="img/index/hotels-search/map-mobile@2x.png 2x"
-            alt="Место на карте распооложено в штате Аризона около Флагстафф" width="320" height="350">
+          <source media="(min-width: 1200px)" srcset="img/index/hotels-search/map-desktop.png, img/index/hotels-search/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/hotels-search/map-tablet.png, img/index/hotels-search/map-tablet@2x.png 2x">
+          <img class="hotels-search__img" src="img/index/hotels-search/map-mobile.png" srcset="img/index/hotels-search/map-mobile@2x.png 2x" alt="Место на карте распооложено в штате Аризона около Флагстафф" width="320" height="350">
         </picture>
       </section>
     </main>
@@ -244,5 +230,4 @@
   </div>
   <script src="js/main.js"></script>
 </body>
-
 </html>
