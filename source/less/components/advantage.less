@@ -3,7 +3,7 @@
   position: relative;
 
   &:nth-child(2) {
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       .advantage__image-wrapper {
         order: -1;
       }
@@ -20,7 +20,7 @@
 }
 
 
-.advantage:not(:first-child):not(:nth-child(2)):not(:nth-child(3))::before {
+.advantage--line-decoration::before {
   @media (max-width: @mobile-width-only) {
     content: "";
     position: absolute;
@@ -84,8 +84,8 @@
 .advantage__text--accent {
   @media (min-width: @tablet-width) {
     min-width: 192px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 28px;
+    margin-right: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -243,7 +243,7 @@
 }
 
 .advantage__description--city-indent {
-  margin: 0 auto 35px;
+  margin: 0 auto 39px;
 }
 
 // bridge
@@ -283,6 +283,10 @@
 }
 
 .advantage__description--bridge-width {
+  @media (min-width: @tablet-width) {
+    width: 165px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 220px;
   }
