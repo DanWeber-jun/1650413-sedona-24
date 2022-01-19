@@ -17,7 +17,7 @@
     background-image: url("../img/index/introduce-section/introduce-tablet.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: 1200px;
     min-height: 518px;
 
     @media (min-resolution: 2dppx) {
@@ -79,6 +79,10 @@
 .introduce__img-wrapper {
   text-align: center;
   padding-top: 77px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 90px;
+  }
 }
 
 .introduce__img-wrapper--inner {
