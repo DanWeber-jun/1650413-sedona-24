@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 36px 0;
+    margin: 31px 0;
   }
 }
 
@@ -38,7 +38,11 @@
   margin: 0;
 
   @media (max-width: @mobile-width-only) {
-    margin: 0 0 40px;
+    margin: 0 0 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 4px;
   }
 }
 
@@ -52,6 +56,15 @@
   width: 47px;
   height: 48px;
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .page-footer__social-link {
@@ -63,8 +76,20 @@
   justify-content: center;
   margin-bottom: 29px;
 
+  @media (max-width: @mobile-width-only) {
+    margin-right: 10px;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+
+  &:hover {
+    fill: rgb(129, 179, 210);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -82,5 +107,5 @@
   text-align: center;
   align-self: center;
   margin: 0;
-  width: 121px;
+  min-width: 113px;
 }

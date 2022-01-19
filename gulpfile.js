@@ -57,6 +57,13 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+// Models
+
+const models = () => {
+  return gulp.src('source/project-models/*.png')
+    .pipe(gulp.dest('build/img'))
+}
+
 //WebP
 
 const createWebp = () => {
@@ -129,7 +136,7 @@ export const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/main.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change', gulp.series(html, browser.reload));
 }
 
 // Build
@@ -154,6 +161,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  models,
   gulp.parallel(
     styles,
     html,

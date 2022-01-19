@@ -17,7 +17,7 @@
     background-image: url("../img/index/introduce-section/introduce-tablet.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: 1200px;
     min-height: 518px;
 
     @media (min-resolution: 2dppx) {
@@ -35,20 +35,35 @@
   }
 }
 
+.introduce--main {
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
 .introduce--inner {
   display: block;
   background-position: bottom;
 
   @media (max-width: @mobile-width-only) {
     min-height: 158px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @tablet-width) {
     min-height: 290px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 300px;
+    margin-bottom: 100px;
   }
 }
 
@@ -64,6 +79,10 @@
 .introduce__img-wrapper {
   text-align: center;
   padding-top: 77px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 90px;
+  }
 }
 
 .introduce__img-wrapper--inner {
