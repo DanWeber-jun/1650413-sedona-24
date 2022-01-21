@@ -52,6 +52,7 @@
 
 .hotels-search__button {
   display: block;
+  text-decoration: none;
   margin: 0 auto 49px;
   padding-top: 15px;
   padding-bottom: 18px;
@@ -89,8 +90,13 @@
   }
 }
 
-.hotels-search__img {
-  object-fit: cover;
-  object-position: 50%;
-  width: 100%;
+.hotels-search__map {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

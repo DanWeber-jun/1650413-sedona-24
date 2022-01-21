@@ -44,14 +44,23 @@
 }
 
 .video-presentation__video {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 320px;
+  height: 201px;
   position: relative;
   margin-bottom: 115px;
 
   @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
     margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 85px;
+    width: 800px;
+    height: 500px;
   }
 }
