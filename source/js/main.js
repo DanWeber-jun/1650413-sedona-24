@@ -18,3 +18,9 @@ navToggle.addEventListener('click', () => {
     navList.classList.add('main-nav__list--closed');
   }
 });
+
+let mapImage = document.querySelector('.hotels-search__map-image');
+let map = document.querySelector('.hotels-search__map');
+
+mapImage.classList.remove('hotels-search__map-image--nojs');
+map.classList.remove('hotels-search__map--nojs');

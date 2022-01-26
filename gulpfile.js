@@ -8,7 +8,7 @@ import browser, { watch } from 'browser-sync';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-squoosh';
+import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import del from 'del';
 import svgstore from 'gulp-svgstore';
@@ -44,26 +44,6 @@ const scripts = () => {
     .pipe(gulp.dest('build/js'))
 }
 
-//Images
-
-const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,jpeg,png}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
-}
-
-const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,jpeg,png}')
-    .pipe(gulp.dest('build/img'))
-}
-
-// Models
-
-const models = () => {
-  return gulp.src('source/project-models/*.png')
-    .pipe(gulp.dest('build/img'))
-}
-
 //WebP
 
 const createWebp = () => {
@@ -74,10 +54,24 @@ const createWebp = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+//Images
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,jpeg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,jpeg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
 //SVG
 
 const svg = () =>
-  gulp.src(['source/img/**/*.ico', 'source/img/**/*.svg', '!source/icons/*.svg'])
+  gulp.src(['source/img/**/*.ico', 'source/img/**/*.svg', 'source/img/**/**/*.svg', '!source/icons/*.svg'])
     .pipe(svgo())
     .pipe (gulp.dest('build/img'));
 
@@ -161,7 +155,6 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-  models,
   gulp.parallel(
     styles,
     html,

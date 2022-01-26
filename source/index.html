@@ -17,13 +17,17 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <a class="main-nav__header-logo" href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/index/header/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg">
-              <img src="img/index/header/logotype.svg" alt="Логотиа Седоны">
-            </picture>
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+          <a class="main-nav__logo-link">
+            <svg class="main-nav__logo main-nav__logo--visible-desktop" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="187" height="96">
+              <use xlink:href="img/sprite.svg#logotype-desktop"></use>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--visible-tablet" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="102" height="84">
+              <use xlink:href="img/sprite.svg#logotype-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--visible-phone" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="102" height="84">
+              <use xlink:href="img/sprite.svg#logotype"></use>
+            </svg>
           </a>
           <button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню">
             <span class="main-nav__toggle"></span>
@@ -55,11 +59,20 @@
       <main class="main">
         <div class="main__introduce introduce introduce--main container">
           <div class="introduce__img-wrapper">
-            <picture>
+            <svg class="introduce__logo introduce__logo--visible-desktop" aria-label="Большой текст приветствия от Седоны" aria-hidden="true" focusable="false" width="461" height="350">
+              <use xlink:href="img/sprite.svg#text-index-desktop"></use>
+            </svg>
+            <svg class="introduce__logo introduce__logo--visible-tablet" aria-label="Большой текст приветствия от Седоны" aria-hidden="true" focusable="false" width="461" height="350">
+              <use xlink:href="img/sprite.svg#text-index-tablet"></use>
+            </svg>
+            <svg class="introduce__logo introduce__logo--visible-phone" aria-label="Большой текст приветствия от Седоны" aria-hidden="true" focusable="false" width="282" height="214">
+              <use xlink:href="img/sprite.svg#text-index"></use>
+            </svg>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="img/index/introduce-section/text-index-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/index/introduce-section/text-index-tablet.svg">
               <img src="img/index/introduce-section/text-index.svg" alt="Большой текст приветствия от Седоны">
-            </picture>
+            </picture> -->
           </div>
         </div>
         <section class="main__advantages advantages">
@@ -173,7 +186,14 @@
             <p class="hotels-search__description">Укажите предполагаемые даты поездки,<br class="hotels-search__description--space"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <a class="hotels-search__button" href="#">Найти гостиницу</a>
-          <iframe class="hotels-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1133984.8122295158!2d-112.27409325083757!3d34.33525595491218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1642696221140!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="hotels-search__map-image hotels-search__map-image--nojs">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/hotels-search/map-desktop.png, img/index/hotels-search/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index/hotels-search/map-tablet.png, img/index/hotels-search/map-tablet@2x.png 2x" >
+              <img src="img/index/hotels-search/map-mobile.png" srcset="img/index/hotels-search/map-mobile@2x.png 2x" alt="Изображение места Седоны на карте">
+            </picture>
+          </div>
+          <iframe class="hotels-search__map hotels-search__map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1133984.8122295158!2d-112.27409325083757!3d34.33525595491218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1642696221140!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
       </main>
       <footer class="page-footer">
@@ -205,10 +225,13 @@
             </ul>
           </div>
           <div class="page-footer__copyright">
-            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс HTML academy по адаптивной вёрстке.">
               <p class="page-footer__copyright-text">Разработано</p>
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="27" height="35">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="27" height="35">
                 <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+              </svg> -->
+              <svg aria-label="Иконка HTML academy" aria-hidden="true" focusable="false" width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>

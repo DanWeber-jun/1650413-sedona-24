@@ -21,13 +21,18 @@
 
 .progress__button {
   position: absolute;
-  left: 203px;
-  transform: translateY(-40%);
-  width: 13px;
-  height: 13px;
+  left: 204px;
+  transform: translateY(-45%);
+  width: 9px;
+  height: 9px;
   border-radius: 100px;
   background-color: #ffffff;
-  border: none;
+  border: 0;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    left: 58px;
+  }
 
   &:hover {
     cursor: pointer;

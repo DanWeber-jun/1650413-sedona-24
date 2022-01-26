@@ -57,7 +57,7 @@
   padding-top: 15px;
   padding-bottom: 18px;
   color: #ffffff;
-  min-width: 280px;
+  width: 280px;
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -99,4 +99,46 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+.hotels-search__map-image {
+  display: none;
+}
+
+.hotels-search__map-image--nojs {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-color: #81b3d3;
+    border: 5px solid  #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    top: 161px;
+    left: 146px;
+    z-index: 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      top: 164px;
+      left: 370px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      top: 162px;
+      left: 586px;
+    }
+  }
+}
+
+.hotels-search__map--nojs {
+  display: none;
 }

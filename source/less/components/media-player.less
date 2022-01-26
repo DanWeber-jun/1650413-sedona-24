@@ -97,14 +97,25 @@
 
   @media (max-width: @mobile-width-only) {
     fill: #5c6870;
+
+    &:hover {
+      fill: rgb(51, 51, 51);
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: rgba(51, 51, 51, 0.3);
+    }
   }
 
-  &:hover {
-    fill: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-  }
+  @media (min-width: @tablet-width) {
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+    }
 
-  &:active {
-    fill: rgb(255, 255, 255, 0.3);
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 }

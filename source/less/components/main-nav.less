@@ -3,8 +3,36 @@
   justify-content: center;
 }
 
-.main-nav__header-logo {
+.main-nav__logo-link {
   position: absolute;
+}
+
+.main-nav__logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav__logo--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo--visible-phone {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+
+  display: none;
 }
 
 .main-nav__button {

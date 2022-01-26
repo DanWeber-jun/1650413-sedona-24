@@ -17,13 +17,17 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <a class="main-nav__header-logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/index/header/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/index/header/logotype-tablet.svg">
-              <img src="img/index/header/logotype.svg" alt="Логотиа Седоны">
-            </picture>
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+          <a class="main-nav__logo-link" href="index.html">
+            <svg class="main-nav__logo main-nav__logo--visible-desktop" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="187" height="96">
+              <use xlink:href="img/sprite.svg#logotype-desktop"></use>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--visible-tablet" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="102" height="84">
+              <use xlink:href="img/sprite.svg#logotype-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--visible-phone" aria-label="Логотип Седоны." aria-hidden="true" focusable="false" width="102" height="84">
+              <use xlink:href="img/sprite.svg#logotype"></use>
+            </svg>
           </a>
           <button class="main-nav__button" type="button" aria-label="Открыть меню / Закрать меню">
             <span class="main-nav__toggle"></span>
@@ -32,7 +36,7 @@
             <li class="main-nav__item main-nav__item--left-list">
               <ul class="main-nav__list-inserted">
                 <li class="main-nav__item-inserted main-nav__item-inserted--first-border">
-                  <a class="main-nav__link " href="index.html">Главная</a>
+                  <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item-inserted">
                   <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -42,7 +46,7 @@
             <li class="main-nav__item main-nav__item--right-list">
               <ul class="main-nav__list-inserted">
                 <li class="main-nav__item-inserted">
-                  <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
+                  <a class="main-nav__link  main-nav__link--current">Форма отзыва</a>
                 </li>
                 <li class="main-nav__item-inserted main-nav__item-inserted--last-border">
                   <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
@@ -55,10 +59,15 @@
       <main class="main main--inner main--form">
         <div class="main__introduce introduce introduce--inner container">
           <div class="introduce__img-wrapper introduce__img-wrapper--inner">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/catalog/introduce-section/SEDONA-tablet.svg">
-              <img src="img/catalog/introduce-section/SEDONA.svg" alt="Большой текст приветствия от Седоны">
-            </picture>
+            <svg class="introduce__svg introduce__svg--visible-desktop" aria-label="Большой текст приветствия от Седоны." aria-hidden="true" focusable="false" width="460" height="80">
+              <use xlink:href="img/sprite.svg#SEDONA-desktop"></use>
+            </svg>
+            <svg class="introduce__svg introduce__svg--visible-tablet" aria-label="Большой текст приветствия от Седоны." aria-hidden="true" focusable="false" width="456" height="80">
+              <use xlink:href="img/sprite.svg#SEDONA-tablet"></use>
+            </svg>
+            <svg class="introduce__svg introduce__svg--visible-phone" aria-label="Большой текст приветствия от Седоны." aria-hidden="true" focusable="false" width="229" height="39">
+              <use xlink:href="img/sprite.svg#SEDONA"></use>
+            </svg>
           </div>
         </div>
         <section class="comment-form container">
@@ -104,8 +113,8 @@
                     <input class="form__input form__input--width form__input--spin" id="phone-number" type="tel" placeholder="Введите телефон">
                     <div class="form__icon-wrapper">
                       <div class="form__icon">
-                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
-                          <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101" />
+                        <svg class="form__contact-icon" aria-label="Иконка телефона." aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#phone"></use>
                         </svg>
                       </div>
                     </div>
@@ -117,8 +126,8 @@
                     <input class="form__input form__input--width" id="e-mail" type="email" placeholder="Введите e-mail" required>
                     <div class="form__icon-wrapper">
                       <div class="form__icon">
-                        <svg class="form__contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none">
-                          <path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000" />
+                        <svg class="form__contact-icon" aria-label="Иконка конерта." aria-hidden="true" focusable="false" width="16" height="12">
+                          <use xlink:href="img/sprite.svg#mail"></use>
                         </svg>
                       </div>
                     </div>
